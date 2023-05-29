@@ -61,24 +61,30 @@ public class MarioMove : MonoBehaviour
                     break;
             }
         }
-            if (die) MarioDie();
+        if (die) StartCoroutine(MarioDie());
+
     }
-    private void MarioDie()
+    IEnumerator MarioDie()
     {
+        float jump_Die = 26;//lực nhảy khi chết
         Vector3 posY = transform.position;
-        if(!m_die) posY.y += 1;
+        //vừa rơi xuống thì nhảy bật lên lại
+        if(!m_die) posY.y += 1 * Time.deltaTime *jump_Die;
 
         if (posY.y < -4f && m_die)
         {
            Destroy(gameObject);
         }
+        //khi bật lên 1 ngưỡng nhất định thì rơi xuống lại
         if ((posY.y < 1.5f || posY.y > 1.5f) && m_die)
         {
-            posY.y -= 1;
+            posY.y -= 1 * Time.deltaTime * jump_Die;
         }
+        //nhảy lên tới 1 mức độ thì bắt đâu rơi xuống
         if (posY.y >= 1.5f) m_die = true;
+        //cập nhật lại position y
         transform.position = posY;
-        Debug.Log(posY.y);
+        yield return null;
        // StartCoroutine(MarioDie());
 
     }
@@ -86,7 +92,7 @@ public class MarioMove : MonoBehaviour
     {
         Moving();
     }
-    // khi nhấn Shift để tăng tốc độ chạy
+    //khi nhấn Shift để tăng tốc độ chạy
     private void SpeedRun()
     {
         if (Input.GetKeyDown(KeyCode.LeftShift))
@@ -140,6 +146,7 @@ public class MarioMove : MonoBehaviour
         {
             die = true;
         }
+       
     }
     // WaitForSecond để thay đỏi hoạt hình quay đầu
     IEnumerator ChangePicture()
