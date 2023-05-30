@@ -13,9 +13,11 @@ GameObject:
   - component: {fileID: 1239814236997698016}
   - component: {fileID: 1239814236997698019}
   - component: {fileID: 1239814236997698018}
+  - component: {fileID: 149134517}
+  - component: {fileID: 149134523}
   m_Layer: 0
   m_Name: mario3_1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 1239814236997698045}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.4, y: -1.44, z: 0}
-  m_LocalScale: {x: 4.4643335, y: 3.7051697, z: 1}
+  m_LocalScale: {x: 4.464334, y: 3.7051697, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -75,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: -1019142217, guid: 8c283846be2e6054db0f3c2195727600, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -100,7 +102,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0011434406, y: 0.0006888211}
+  m_Offset: {x: 0.0014989898, y: -0.0040785}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -111,7 +113,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16914684, y: 0.29066426}
+  m_Size: {x: 0.21784957, y: 0.28107935}
   m_EdgeRadius: 0
 --- !u!50 &1239814236997698019
 Rigidbody2D:
@@ -133,7 +135,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!95 &1239814236997698018
 Animator:
   serializedVersion: 5
@@ -155,3 +157,30 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &149134517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239814236997698045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7022b6fa802e1454787ba69f6ca512c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 3
+  henshin: 1
+--- !u!114 &149134523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239814236997698045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 235a5ee3d7a08354a8a1358fcbe230dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_animator: {fileID: 1239814236997698018}
