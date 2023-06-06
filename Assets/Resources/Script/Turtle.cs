@@ -6,10 +6,10 @@ public class Turtle : MonoBehaviour
 {
     float speed_Move=2;//toc do di chuyen của rùa
     bool turn_Left = true;
+  
     private void FixedUpdate()
     {
-        Vector2 TurtleMove = transform.localPosition;
-        Vector2 TurtleTurn = transform.localScale;
+        Vector2 TurtleMove =transform.position;
         if (turn_Left) {
             TurtleMove.x -= speed_Move * Time.deltaTime;
         }
@@ -17,14 +17,18 @@ public class Turtle : MonoBehaviour
         {
             TurtleMove.x += speed_Move * Time.deltaTime;
         }
-        if(TurtleMove.x < 18f || TurtleMove.x >22)
+        //gắn lại position cho turtle
+        transform.position = TurtleMove;
+    }
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.CompareTag("limit"))
         {
             turn_Left = !turn_Left;
+            //quay đầu
+            Vector2 TurtleTurn = transform.localScale;
             TurtleTurn.x *= -1;
+            transform.localScale = TurtleTurn;
         }
-        //gắn lại position cho turtle
-        transform.localScale = TurtleTurn;
-        transform.localPosition = TurtleMove;
     }
-
 }

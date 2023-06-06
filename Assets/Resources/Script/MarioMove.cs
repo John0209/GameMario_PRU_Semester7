@@ -11,8 +11,8 @@ public class MarioMove : MonoBehaviour
     float speed = 0;
     bool ground = true;
     bool turn = false;
-    bool die = false;// hoạt ảnh die
-    bool pistol=false;
+    public bool die = false;// hoạt ảnh die
+    public bool circle=false;
     #endregion animator
     //---------------------------------------
     public int level;
@@ -45,10 +45,10 @@ public class MarioMove : MonoBehaviour
         m_animator.SetBool("ground", ground);
         m_animator.SetBool("turn", turn);
         m_animator.SetBool("die", die);
-        m_animator.SetBool("pistol", pistol);
+        m_animator.SetBool("circle", circle);
         Jumping();
         SpeedRun();
-        //Pistol();
+        Circle();
         // biến hình Hayyyyyoooooo
         if (henshin){
 
@@ -67,32 +67,59 @@ public class MarioMove : MonoBehaviour
                     break;
             }
         }
-        if (die) StartCoroutine(MarioDie());
-
     }
-    public float localdie;
+    public void ActiveMarioDie()
+    {
+        if (die)
+        {
+            locationDie = transform.localPosition;//vị trí chết
+            StartCoroutine(MarioDie());
+        }
+    }
     IEnumerator MarioDie()
     {
-        float jump_Die = 26;//lực nhảy khi chết
-        Vector3 posY = transform.localPosition;
-        //vừa rơi xuống thì nhảy bật lên lại
-        if(!m_die) posY.y += 1 * Time.deltaTime *jump_Die;
-        // hủy nhân vật
-        if (posY.y < -4f && m_die)
+        float jump_Die = 30f;
+        bool is_Check = true;
+        m_rgb.bodyType = RigidbodyType2D.Kinematic;
+        while(true)
         {
-           Destroy(gameObject);
+            if (is_Check)
+            transform.localPosition = new Vector2(transform.localPosition.x, transform.localPosition.y + jump_Die * Time.deltaTime);
+
+      if(transform.localPosition.y >= locationDie.y + 3)
+                is_Check = false;
+            yield return null;
+            if (is_Check == false)
+            {
+                transform.localPosition = new Vector2(transform.localPosition.x, transform.localPosition.y - jump_Die * Time.deltaTime);
+            }
+            if (transform.localPosition.y<=-6f)
+            {
+                Destroy(gameObject);
+                break;
+            }
+            yield return null;
         }
-        //khi bật lên 1 ngưỡng nhất định thì rơi xuống lại
-        if ((posY.y < (locationDie.y + 6) || posY.y > (locationDie.y + 6)) && m_die)
-        {
-            posY.y -= 1 * Time.deltaTime * jump_Die;
-        }
-        //nhảy lên tới 1 mức độ thì bắt đâu rơi xuống
-        if (posY.y >= (locationDie.y + 6)) m_die = true;
-        //cập nhật lại position y
-        transform.position = posY;
-        yield return null;
-       // StartCoroutine(MarioDie());
+       // Vector3 posY = transform.localPosition;
+        
+       // //vừa rơi xuống thì nhảy bật lên lại
+       // if (!m_die) posY.y += 1 * Time.deltaTime *jump_Die;
+       // // hủy nhân vật
+       // if (posY.y < -3f && m_die)
+       // {
+       //    Destroy(gameObject);
+       // }
+       // //khi bật lên 1 ngưỡng nhất định thì rơi xuống lại
+       // if ((posY.y < (locationDie.y + 4) || posY.y > (locationDie.y + 4)) && m_die)
+       // {
+       //     posY.y -= 1 * Time.deltaTime * jump_Die;
+       // }
+       // //nhảy lên tới 1 mức độ thì bắt đâu rơi xuống
+       // if (posY.y >= (locationDie.y + 4)) m_die = true;
+       // //cập nhật lại position y
+       // transform.position = posY;
+       // yield return null;
+       //// StartCoroutine(MarioDie());
 
     }
     private void FixedUpdate()
@@ -100,16 +127,16 @@ public class MarioMove : MonoBehaviour
         Moving();
     }
     // bắn súng
-    private void Pistol()
+    private void Circle()
     {
 
         if (Input.GetKeyDown(KeyCode.R))
         {
-            pistol= true;
+            circle= true;
         }
         if (Input.GetKeyUp(KeyCode.R))
         {
-           pistol= false;
+           circle= false;
         }
     }
     //khi nhấn Shift để tăng tốc độ chạy
@@ -166,7 +193,8 @@ public class MarioMove : MonoBehaviour
         {
             m_box.isTrigger = true;
             die = true;
-            locationDie = transform.localPosition;//vị trí chết
+            ActiveMarioDie();
+
         }
 
 
