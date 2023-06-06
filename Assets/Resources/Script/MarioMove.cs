@@ -12,6 +12,7 @@ public class MarioMove : MonoBehaviour
     bool ground = true;
     bool turn = false;
     bool die = false;// hoạt ảnh die
+    bool pistol=false;
     #endregion animator
     //---------------------------------------
     public int level;
@@ -23,8 +24,10 @@ public class MarioMove : MonoBehaviour
     bool m_turn = true;
     bool m_die=false;
     Rigidbody2D m_rgb;
+    BoxCollider2D m_box;
     Henshin m_henshin;
     float late = 0.1f;
+    Vector2 locationDie;// vị trí lúc chết
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +35,7 @@ public class MarioMove : MonoBehaviour
         m_rgb = GetComponent<Rigidbody2D>();
         m_animator = GetComponent<Animator>();
         m_henshin=FindObjectOfType<Henshin>();
+        m_box= GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
@@ -41,8 +45,10 @@ public class MarioMove : MonoBehaviour
         m_animator.SetBool("ground", ground);
         m_animator.SetBool("turn", turn);
         m_animator.SetBool("die", die);
+        m_animator.SetBool("pistol", pistol);
         Jumping();
         SpeedRun();
+        //Pistol();
         // biến hình Hayyyyyoooooo
         if (henshin){
 
@@ -64,24 +70,25 @@ public class MarioMove : MonoBehaviour
         if (die) StartCoroutine(MarioDie());
 
     }
+    public float localdie;
     IEnumerator MarioDie()
     {
         float jump_Die = 26;//lực nhảy khi chết
-        Vector3 posY = transform.position;
+        Vector3 posY = transform.localPosition;
         //vừa rơi xuống thì nhảy bật lên lại
         if(!m_die) posY.y += 1 * Time.deltaTime *jump_Die;
-
+        // hủy nhân vật
         if (posY.y < -4f && m_die)
         {
            Destroy(gameObject);
         }
         //khi bật lên 1 ngưỡng nhất định thì rơi xuống lại
-        if ((posY.y < 1.5f || posY.y > 1.5f) && m_die)
+        if ((posY.y < (locationDie.y + 6) || posY.y > (locationDie.y + 6)) && m_die)
         {
             posY.y -= 1 * Time.deltaTime * jump_Die;
         }
         //nhảy lên tới 1 mức độ thì bắt đâu rơi xuống
-        if (posY.y >= 1.5f) m_die = true;
+        if (posY.y >= (locationDie.y + 6)) m_die = true;
         //cập nhật lại position y
         transform.position = posY;
         yield return null;
@@ -91,6 +98,19 @@ public class MarioMove : MonoBehaviour
     private void FixedUpdate()
     {
         Moving();
+    }
+    // bắn súng
+    private void Pistol()
+    {
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            pistol= true;
+        }
+        if (Input.GetKeyUp(KeyCode.R))
+        {
+           pistol= false;
+        }
     }
     //khi nhấn Shift để tăng tốc độ chạy
     private void SpeedRun()
@@ -142,11 +162,14 @@ public class MarioMove : MonoBehaviour
             ground = true;
         }
         //mario die
-        if (col.gameObject.CompareTag("underGround"))
+        if (col.gameObject.CompareTag("underGround")||col.gameObject.CompareTag("enemies"))
         {
+            m_box.isTrigger = true;
             die = true;
+            locationDie = transform.localPosition;//vị trí chết
         }
-       
+
+
     }
     // WaitForSecond để thay đỏi hoạt hình quay đầu
     IEnumerator ChangePicture()
