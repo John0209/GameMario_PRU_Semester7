@@ -21,14 +21,18 @@ public class MarioMove : MonoBehaviour
     float jumped_move=450f;// lực nhảy
     float jumped_low=50f;// nhảy thấp
     float gravity=5f;// trọng lực
-    bool m_turn = true;
+    bool m_turn = true;// quay đầu
     bool m_die=false;
     Rigidbody2D m_rgb;
     BoxCollider2D m_box;
     Henshin m_henshin;
-    float late = 0.1f;
     Vector2 locationDie;// vị trí lúc chết
-
+    //---------------------------------------
+    int m_score;// điểm ăn xu
+    int m_star_henshin;// điểm ăn sao biến hình
+    UIManager m_manager;
+    public GameObject m_xu;
+    public GameObject m_star;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +40,8 @@ public class MarioMove : MonoBehaviour
         m_animator = GetComponent<Animator>();
         m_henshin=FindObjectOfType<Henshin>();
         m_box= GetComponent<BoxCollider2D>();
+        m_manager = FindObjectOfType<UIManager>();
+
     }
 
     // Update is called once per frame
@@ -46,27 +52,39 @@ public class MarioMove : MonoBehaviour
         m_animator.SetBool("turn", turn);
         m_animator.SetBool("die", die);
         m_animator.SetBool("circle", circle);
+        // call function
         Jumping();
         SpeedRun();
         Circle();
+        EatStar(); // điều kiện biến hình
         // biến hình Hayyyyyoooooo
         if (henshin){
 
             switch (level){
-                case 3:
-                    StartCoroutine(m_henshin.Mario());
-                    henshin = false;
-                    break;
                 case 1:
-                    StartCoroutine(m_henshin.MarioPink());
+                    StartCoroutine(m_henshin.Mario());
                     henshin = false;
                     break;
                 case 2:
                     StartCoroutine(m_henshin.MarioGreen());
                     henshin = false;
                     break;
+                case 3:
+                    StartCoroutine(m_henshin.MarioPink());
+                    henshin = false;
+                    break;
             }
         }
+    }
+    private void FixedUpdate()
+    {
+        Moving();
+    }
+    // Set Điều kiện để henshin
+    void EatStar()
+    {
+        if (m_star_henshin >= 1) m_manager.ActiveButtonLv2();
+        if (m_star_henshin >= 2) m_manager.ActiveButtonLv3();
     }
     public void ActiveMarioDie()
     {
@@ -100,33 +118,9 @@ public class MarioMove : MonoBehaviour
             }
             yield return null;
         }
-       // Vector3 posY = transform.localPosition;
-        
-       // //vừa rơi xuống thì nhảy bật lên lại
-       // if (!m_die) posY.y += 1 * Time.deltaTime *jump_Die;
-       // // hủy nhân vật
-       // if (posY.y < -3f && m_die)
-       // {
-       //    Destroy(gameObject);
-       // }
-       // //khi bật lên 1 ngưỡng nhất định thì rơi xuống lại
-       // if ((posY.y < (locationDie.y + 4) || posY.y > (locationDie.y + 4)) && m_die)
-       // {
-       //     posY.y -= 1 * Time.deltaTime * jump_Die;
-       // }
-       // //nhảy lên tới 1 mức độ thì bắt đâu rơi xuống
-       // if (posY.y >= (locationDie.y + 4)) m_die = true;
-       // //cập nhật lại position y
-       // transform.position = posY;
-       // yield return null;
-       //// StartCoroutine(MarioDie());
-
     }
-    private void FixedUpdate()
-    {
-        Moving();
-    }
-    // bắn súng
+    
+    // lăn tròn tấn công
     private void Circle()
     {
 
@@ -171,7 +165,7 @@ public class MarioMove : MonoBehaviour
         StartCoroutine(ChangePicture());
     }
     private void Jumping()
-    {
+    {   
         if(Input.GetKeyDown(KeyCode.Space)&&ground)
         {
             m_rgb.AddForce((Vector2.up) * jumped_move);
@@ -194,11 +188,22 @@ public class MarioMove : MonoBehaviour
             m_box.isTrigger = true;
             die = true;
             ActiveMarioDie();
-
         }
-
-
+        //ăn xu
+        if (col.gameObject.CompareTag("xu"))
+        {
+            m_xu.SetActive(false);
+            m_score++;
+            m_manager.SetTextScore("x 0" + m_score);
+        }
+        // ăn sao
+        if (col.gameObject.CompareTag("star"))
+        {
+            m_star.SetActive(false);
+            m_star_henshin++;
+        }
     }
+    
     // WaitForSecond để thay đỏi hoạt hình quay đầu
     IEnumerator ChangePicture()
     {

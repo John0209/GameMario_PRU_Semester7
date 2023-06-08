@@ -25,18 +25,5 @@ public class Bird : MonoBehaviour
         }
         transform.localPosition = FlyMove;
     }
-    private void OnTriggerEnter2D(Collider2D col)
-    {
-        if (col.gameObject.CompareTag("a12"))
-        {
-            Debug.Log("Hello");
-        }
-    }
-    private void OnCollisionEnter2D(Collision2D col)
-    {
-        if (col.gameObject.CompareTag("a12"))
-        {
-            Debug.Log("Hello");
-        }
-    }
+    
 }

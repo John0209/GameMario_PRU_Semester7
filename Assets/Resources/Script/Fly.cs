@@ -15,7 +15,7 @@ public class Fly : MonoBehaviour
         else
             FlyMove.x += speed_Move * Time.deltaTime;
         //gắn lại position cho turtle
-        if(FlyMove.x <61 || FlyMove.x > 66)
+        if(FlyMove.x <61.5f || FlyMove.x > 66)
         {
             turn_Left = !turn_Left;
             //quay đầu
