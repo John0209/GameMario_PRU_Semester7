@@ -13,6 +13,9 @@ public class MarioMove : MonoBehaviour
     bool turn = false;
     public bool die = false;// hoạt ảnh die
     public bool circle=false;
+    public bool hp = false;
+    public bool fly = false;
+    public bool shoot=false;
     #endregion animator
     //---------------------------------------
     public int level;
@@ -23,13 +26,16 @@ public class MarioMove : MonoBehaviour
     float gravity=5f;// trọng lực
     bool m_turn = true;// quay đầu
     bool m_die=false;
+    public GameObject m_shoot;
+    public Transform m_transform;
     Rigidbody2D m_rgb;
     BoxCollider2D m_box;
     Henshin m_henshin;
     Vector2 locationDie;// vị trí lúc chết
+    bool isMark = true; // check để tắt fly
     //---------------------------------------
     int m_score;// điểm ăn xu
-    int m_star_henshin;// điểm ăn sao biến hình
+    public int m_star_henshin;// điểm ăn sao biến hình
     UIManager m_manager;
     public GameObject m_xu;
     public GameObject m_star;
@@ -52,11 +58,16 @@ public class MarioMove : MonoBehaviour
         m_animator.SetBool("turn", turn);
         m_animator.SetBool("die", die);
         m_animator.SetBool("circle", circle);
+        m_animator.SetBool("hp", hp);
+        m_animator.SetBool("fly", fly);
+        m_animator.SetBool("shoot", shoot);
         // call function
+        Moving();
         Jumping();
         SpeedRun();
-        Circle();
+        Skill();
         EatStar(); // điều kiện biến hình
+        if (fly) Flight(); // điều khiển mario khi bay
         // biến hình Hayyyyyoooooo
         if (henshin){
 
@@ -76,15 +87,24 @@ public class MarioMove : MonoBehaviour
             }
         }
     }
-    private void FixedUpdate()
+    
+
+    #region Die
+    // Nếu đụng trúng enomy, sẽ trừ sao hạ cấp
+    public void MinusStar()
     {
-        Moving();
-    }
-    // Set Điều kiện để henshin
-    void EatStar()
-    {
-        if (m_star_henshin >= 1) m_manager.ActiveButtonLv2();
-        if (m_star_henshin >= 2) m_manager.ActiveButtonLv3();
+        if (m_star_henshin < 2)
+        {
+            henshin = true;
+            level = 1;
+            m_manager.DisActiveButtonLv2();
+        }
+        if (m_star_henshin < 3)
+        {
+            henshin = true;
+            level = 2;
+            m_manager.DisActiveButtonLv3();
+        }
     }
     public void ActiveMarioDie()
     {
@@ -119,21 +139,100 @@ public class MarioMove : MonoBehaviour
             yield return null;
         }
     }
-    
-    // lăn tròn tấn công
-    private void Circle()
-    {
+    #endregion
 
-        if (Input.GetKeyDown(KeyCode.R))
+    #region WaitSecond
+    // WaitForSecond để thay đỏi hoạt hình quay đầu
+    IEnumerator ChangePicture()
+    {
+        turn = true;
+        yield return new WaitForSeconds(0.2f);
+        turn = false;
+    }
+    // check hết 3s sẽ tự hạ xuống đất
+    IEnumerator DisFly()
+    {
+        isMark = false;
+        yield return new WaitForSeconds(3);
+        m_rgb.bodyType = RigidbodyType2D.Dynamic;
+        fly = false;
+        isMark = true;
+    }
+    #endregion
+
+    #region Điều Kiện
+    // Set Điều kiện để henshin
+    void EatStar()
+    {
+        if (m_star_henshin == 2) m_manager.ActiveButtonLv2();
+        if (m_star_henshin == 3) m_manager.ActiveButtonLv3();
+    }
+    // lăn tròn tấn công
+    private void Skill()
+    {
+        // Red Circle
+        if (Input.GetKeyDown(KeyCode.R) && level==1)
         {
             circle= true;
         }
-        if (Input.GetKeyUp(KeyCode.R))
+        if (Input.GetKeyUp(KeyCode.R) && level == 1)
         {
            circle= false;
         }
+        // Green fly
+        if (Input.GetKey(KeyCode.R) && level == 2)
+        {
+            m_rgb.bodyType = RigidbodyType2D.Kinematic;
+            fly = true;
+            Flight();
+          if(isMark) StartCoroutine(DisFly());
+        }
+        if (Input.GetKeyDown(KeyCode.R) && level == 3 && speed==0)
+        {
+            shoot = true;
+            PinkShoot();
+        }
+        if (Input.GetKeyUp(KeyCode.R) && level == 3 && speed == 0)
+        {
+            shoot = false;
+        }
+
     }
-    //khi nhấn Shift để tăng tốc độ chạy
+    #endregion
+
+    #region Action
+    public void PinkShoot()
+    {
+        m_shoot.SetActive(true);
+        Instantiate(m_shoot,m_transform.position,Quaternion.identity);
+    }
+    // Action bay và chạy
+    private void Flight()
+    {
+        float right_left = Input.GetAxis("Horizontal");
+        float fly = Input.GetAxis("Vertical");
+        m_rgb.velocity = new Vector2(speed_move * right_left,fly* speed_move);
+    }
+    private void Moving()
+    {
+        float right_left = Input.GetAxis("Horizontal");
+        m_rgb.velocity=new Vector2(speed_move*right_left,m_rgb.velocity.y);
+        speed =Mathf.Abs(speed_move * right_left);
+        if (right_left > 0 && !m_turn) Scale();
+        if (right_left < 0 && m_turn) Scale();
+    }
+    private void Jumping()
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && ground)
+        {
+            m_rgb.AddForce((Vector2.up) * jumped_move);
+            ground = false;
+        }
+        if (m_rgb.velocity.y < 0)
+            m_rgb.velocity += Vector2.up * Physics2D.gravity.y * (gravity - 1) * Time.deltaTime;
+        else if (m_rgb.velocity.y > 0 && !Input.GetKey(KeyCode.Space))
+            m_rgb.velocity += Vector2.up * Physics2D.gravity.y * (jumped_low - 1) * Time.deltaTime;
+    }
     private void SpeedRun()
     {
         if (Input.GetKeyDown(KeyCode.LeftShift))
@@ -145,71 +244,42 @@ public class MarioMove : MonoBehaviour
             speed_move = 5f;
         }
     }
-    private void Moving()
-    {
-        float right_left = Input.GetAxis("Horizontal");
-        m_rgb.velocity=new Vector2(speed_move*right_left,m_rgb.velocity.y);
-        speed=Mathf.Abs(speed_move * right_left);
-        if (right_left > 0 && !m_turn) Scale();
-        if (right_left < 0 && m_turn) Scale();
-    }
-    // dùng để đổi hoạt ảnh khi quay trái phải
-    private void Scale()
+    private void Scale()  // dùng để đổi hoạt ảnh khi quay trái phải
     {
         Vector2 marioTurn = transform.localScale;
         marioTurn.x *= -1;
         //doi huong quay
-        transform.localScale=marioTurn;
+        transform.localScale = marioTurn;
         //doi nguoc lai status m_turn
         m_turn = !m_turn;
         StartCoroutine(ChangePicture());
     }
-    private void Jumping()
-    {   
-        if(Input.GetKeyDown(KeyCode.Space)&&ground)
-        {
-            m_rgb.AddForce((Vector2.up) * jumped_move);
-            ground = false;
-        }
-        if (m_rgb.velocity.y < 0)
-            m_rgb.velocity += Vector2.up * Physics2D.gravity.y * (gravity - 1) * Time.deltaTime;
-        else if(m_rgb.velocity.y>0 && !Input.GetKey(KeyCode.Space))
-            m_rgb.velocity += Vector2.up * Physics2D.gravity.y * (jumped_low - 1) * Time.deltaTime;
-    }
+    #endregion
+
     private void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.CompareTag("ground"))
+        if (col.gameObject.CompareTag("ground"))// đứng trên đất
         {
             ground = true;
         }
-        //mario die
-        if (col.gameObject.CompareTag("underGround")||col.gameObject.CompareTag("enemies"))
+        if (col.gameObject.CompareTag("underGround"))//mario die
         {
             m_box.isTrigger = true;
             die = true;
             ActiveMarioDie();
         }
-        //ăn xu
-        if (col.gameObject.CompareTag("xu"))
+        if (col.gameObject.CompareTag("xu"))//ăn xu
         {
             m_xu.SetActive(false);
             m_score++;
             m_manager.SetTextScore("x 0" + m_score);
         }
-        // ăn sao
-        if (col.gameObject.CompareTag("star"))
+        if (col.gameObject.CompareTag("star")) // ăn sao
         {
             m_star.SetActive(false);
             m_star_henshin++;
+            m_manager.SetTextStar("x 0" + m_star_henshin);
         }
-    }
-    
-    // WaitForSecond để thay đỏi hoạt hình quay đầu
-    IEnumerator ChangePicture()
-    {
-        turn = true;
-        yield return new WaitForSeconds(0.2f);
-        turn=false;
     }
     
     }

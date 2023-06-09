@@ -10,16 +10,29 @@ public class Enomies : MonoBehaviour
     GameObject Mario;
     MarioMove m_mario;
     Rigidbody2D m_rgb;
+    UIManager m_uiManager;
     Vector2 locationDie;// vị trí lúc chết
     private void Start()
     {
         m_mario=FindObjectOfType<MarioMove>();
         Mario = GameObject.FindGameObjectWithTag("Player");
         m_rgb=GetComponent<Rigidbody2D>();
+        m_uiManager=FindObjectOfType<UIManager>();
+    }
+    private void OnTriggerEnter2D(Collider2D cols)
+    {
+        if (cols.gameObject.CompareTag("shoot"))
+        {
+           
+            //    ActiveEnomyDie(false);
+            //else
+                ActiveEnomyDie(true);
+        }
     }
     private void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.collider.tag == "Player" && (m_mario.circle==true))
+       
+        if ((col.collider.tag == "Player" && (m_mario.circle==true))|| col.collider.tag == "shoot")
         {
             //Debug.Log(col.contacts[0].normal.x);// right -, left +
             if(col.contacts[0].normal.x<0)
@@ -29,9 +42,26 @@ public class Enomies : MonoBehaviour
         }
         else if(col.collider.tag == "Player")
         {
-            m_mario.die = true;
-            Mario.GetComponent<MarioMove>().ActiveMarioDie();
+            if (m_mario.m_star_henshin <= 1)
+            {
+                m_mario.die = true;
+                Mario.GetComponent<MarioMove>().ActiveMarioDie();
+            }
+            else
+            {
+                StartCoroutine(MinusHp());
+                m_mario.m_star_henshin--;
+                m_uiManager.SetTextStar("x 0" + m_mario.m_star_henshin);
+                m_mario.MinusStar();
+            }
+
         }
+    }
+    IEnumerator MinusHp()
+    {
+        m_mario.hp = true;
+        yield return new WaitForSeconds(0.3f);
+        m_mario.hp = false;
     }
     public void ActiveEnomyDie(bool is_turn)
     {

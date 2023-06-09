@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     public Text m_score;
+    public Text m_star;
     MarioMove m_move;
     public GameObject m_lv2;
     public GameObject m_lv3;
@@ -16,6 +17,10 @@ public class UIManager : MonoBehaviour
     public void SetTextScore(string text)
     {
         m_score.text = text;
+    }
+    public void SetTextStar(string text)
+    {
+        m_star.text = text;
     }
     public void Lv2()
     {
