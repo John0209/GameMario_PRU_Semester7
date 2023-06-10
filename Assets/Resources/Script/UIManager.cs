@@ -22,6 +22,11 @@ public class UIManager : MonoBehaviour
     {
         m_star.text = text;
     }
+    public void Lv1()
+    {
+        m_move.henshin = true;
+        m_move.level = 1;
+    }
     public void Lv2()
     {
         m_move.henshin = true;

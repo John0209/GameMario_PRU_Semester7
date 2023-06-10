@@ -158,6 +158,13 @@ public class MarioMove : MonoBehaviour
         fly = false;
         isMark = true;
     }
+    IEnumerator DisCirle()
+    {
+        isMark = false;
+        yield return new WaitForSeconds(3);
+        circle = false;
+        isMark = true;
+    }
     #endregion
 
     #region Điều Kiện
@@ -171,18 +178,15 @@ public class MarioMove : MonoBehaviour
     private void Skill()
     {
         // Red Circle
-        if (Input.GetKeyDown(KeyCode.R) && level==1)
+        if (Input.GetKey(KeyCode.R) && level==1)
         {
             circle= true;
-        }
-        if (Input.GetKeyUp(KeyCode.R) && level == 1)
-        {
-           circle= false;
+            if (isMark) StartCoroutine(DisCirle());
         }
         // Green fly
         if (Input.GetKey(KeyCode.R) && level == 2)
         {
-            m_rgb.bodyType = RigidbodyType2D.Kinematic;
+            m_rgb.bodyType = RigidbodyType2D.Kinematic; 
             fly = true;
             Flight();
           if(isMark) StartCoroutine(DisFly());
@@ -201,6 +205,7 @@ public class MarioMove : MonoBehaviour
     #endregion
 
     #region Action
+    // hồng bắn đạn
     public void PinkShoot()
     {
         m_shoot.SetActive(true);

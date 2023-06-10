@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 1791566791}
   m_Layer: 0
   m_Name: fly
-  m_TagString: Untagged
+  m_TagString: enemies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -200,7 +200,7 @@ GameObject:
   - component: {fileID: 722062575}
   m_Layer: 0
   m_Name: bird
-  m_TagString: Untagged
+  m_TagString: enemies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -420,7 +420,7 @@ GameObject:
   - component: {fileID: 2045052931}
   m_Layer: 0
   m_Name: turtle
-  m_TagString: Untagged
+  m_TagString: enemies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -599,6 +599,7 @@ GameObject:
   - component: {fileID: 5382557671084814200}
   - component: {fileID: 5382557671084814201}
   - component: {fileID: 5382557671084814182}
+  - component: {fileID: 1366817287}
   m_Layer: 0
   m_Name: flower (1)
   m_TagString: enemies
@@ -741,6 +742,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1366817287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5382557671084814180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d37b07b242dc19648a8d4e1e66dcdfa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_enomies: {fileID: 5382557671084814180}
+  m_itemStar: {fileID: 0}
 --- !u!1 &5382557671621839154
 GameObject:
   m_ObjectHideFlags: 0
@@ -754,6 +769,7 @@ GameObject:
   - component: {fileID: 5382557671621839158}
   - component: {fileID: 5382557671621839159}
   - component: {fileID: 5382557671621839156}
+  - component: {fileID: 255832678}
   m_Layer: 0
   m_Name: flower (2)
   m_TagString: enemies
@@ -896,6 +912,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &255832678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5382557671621839154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d37b07b242dc19648a8d4e1e66dcdfa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_enomies: {fileID: 5382557671621839154}
+  m_itemStar: {fileID: 0}
 --- !u!1 &5382557672018561356
 GameObject:
   m_ObjectHideFlags: 0
@@ -909,6 +939,7 @@ GameObject:
   - component: {fileID: 5382557672018561344}
   - component: {fileID: 5382557672018561345}
   - component: {fileID: 5382557672018561358}
+  - component: {fileID: 1927235222}
   m_Layer: 0
   m_Name: flower
   m_TagString: enemies
@@ -1051,3 +1082,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1927235222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5382557672018561356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d37b07b242dc19648a8d4e1e66dcdfa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_enomies: {fileID: 5382557672018561356}
+  m_itemStar: {fileID: 0}

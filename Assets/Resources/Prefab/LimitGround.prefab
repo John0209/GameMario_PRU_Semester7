@@ -302,7 +302,7 @@ GameObject:
   - component: {fileID: 7337494989558895960}
   m_Layer: 0
   m_Name: LimitHead
-  m_TagString: Untagged
+  m_TagString: limit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -360,7 +360,7 @@ GameObject:
   - component: {fileID: 7337494990147721664}
   m_Layer: 0
   m_Name: LimitLast
-  m_TagString: Untagged
+  m_TagString: limit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
