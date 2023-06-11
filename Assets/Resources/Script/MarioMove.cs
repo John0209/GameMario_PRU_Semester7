@@ -34,8 +34,8 @@ public class MarioMove : MonoBehaviour
     Vector2 locationDie;// vị trí lúc chết
     bool isMark = true; // check để tắt fly
     //---------------------------------------
-    int m_score;// điểm ăn xu
     public int m_star_henshin;// điểm ăn sao biến hình
+    public int m_score;// điểm ăn xu
     UIManager m_manager;
     public GameObject m_xu;
     public GameObject m_star;
@@ -111,6 +111,7 @@ public class MarioMove : MonoBehaviour
         if (die)
         {
             locationDie = transform.localPosition;//vị trí chết
+            m_box.isTrigger = true;
             StartCoroutine(MarioDie());
         }
     }
@@ -131,7 +132,7 @@ public class MarioMove : MonoBehaviour
             {
                 transform.localPosition = new Vector2(transform.localPosition.x, transform.localPosition.y - jump_Die * Time.deltaTime);
             }
-            if (transform.localPosition.y<=-6f)
+            if (transform.localPosition.y<=-11f)
             {
                 Destroy(gameObject);
                 break;

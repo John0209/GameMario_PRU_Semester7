@@ -65,8 +65,9 @@ public class Enomies : MonoBehaviour
     }
     public void ActiveEnomyDie(bool is_turn)
     {
-            locationDie = transform.localPosition;//vị trí chết
-            StartCoroutine(EnomiesDie(is_turn));
+            locationDie =m_enomies.transform.localPosition;//vị trí chết
+        
+        StartCoroutine(EnomiesDie(is_turn));
     }
     IEnumerator EnomiesDie(bool is_turn)
     {
@@ -90,7 +91,7 @@ public class Enomies : MonoBehaviour
                 m_itemStar.SetActive(true);
                 break;
             }
-            m_itemStar.transform.localPosition = new Vector2(locationDie.x+2,locationDie.y);
+            m_itemStar.transform.localPosition = new Vector2(locationDie.x+1,locationDie.y+0.5f);
             yield return null;
         }
     }

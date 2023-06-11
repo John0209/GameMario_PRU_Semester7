@@ -1834,13 +1834,17 @@ PrefabInstance:
       propertyPath: m_star
       value: 
       objectReference: {fileID: 1668450149}
+    - target: {fileID: 1976378692, guid: 3d843d68ae2cd4746a3cd5aaa185bf4c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1239814236997698022, guid: 3d843d68ae2cd4746a3cd5aaa185bf4c, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1239814236997698022, guid: 3d843d68ae2cd4746a3cd5aaa185bf4c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 28.33
+      value: -3.06
       objectReference: {fileID: 0}
     - target: {fileID: 1239814236997698022, guid: 3d843d68ae2cd4746a3cd5aaa185bf4c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2268,6 +2272,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 159722125, guid: 2164d3076626c594b9b846a11b4e8ba5, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 255832678, guid: 2164d3076626c594b9b846a11b4e8ba5, type: 3}
       propertyPath: m_itemStar
       value: 
@@ -2276,6 +2284,10 @@ PrefabInstance:
       propertyPath: m_itemStar
       value: 
       objectReference: {fileID: 1668450149}
+    - target: {fileID: 722062576, guid: 2164d3076626c594b9b846a11b4e8ba5, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1366817287, guid: 2164d3076626c594b9b846a11b4e8ba5, type: 3}
       propertyPath: m_itemStar
       value: 
@@ -2288,6 +2300,10 @@ PrefabInstance:
       propertyPath: m_itemStar
       value: 
       objectReference: {fileID: 1668450149}
+    - target: {fileID: 2045052925, guid: 2164d3076626c594b9b846a11b4e8ba5, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2045052931, guid: 2164d3076626c594b9b846a11b4e8ba5, type: 3}
       propertyPath: m_itemStar
       value: 
@@ -2339,6 +2355,18 @@ PrefabInstance:
     - target: {fileID: 5382557670854165790, guid: 2164d3076626c594b9b846a11b4e8ba5, type: 3}
       propertyPath: m_Name
       value: Enemies
+      objectReference: {fileID: 0}
+    - target: {fileID: 5382557671084814182, guid: 2164d3076626c594b9b846a11b4e8ba5, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5382557671621839156, guid: 2164d3076626c594b9b846a11b4e8ba5, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5382557672018561358, guid: 2164d3076626c594b9b846a11b4e8ba5, type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2164d3076626c594b9b846a11b4e8ba5, type: 3}
