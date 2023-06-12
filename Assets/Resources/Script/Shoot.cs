@@ -6,7 +6,7 @@ public class Shoot : MonoBehaviour
 {
     public GameObject mario;
     float speed = 5;
-    float timeDestroy = 4;
+    //float timeDestroy = 4;
     Rigidbody2D m_rgb;
     bool is_mark = true;
     void Start()

@@ -25,7 +25,7 @@ public class MarioMove : MonoBehaviour
     float jumped_low=50f;// nhảy thấp
     float gravity=5f;// trọng lực
     bool m_turn = true;// quay đầu
-    bool m_die=false;
+    //bool m_die=false;
     public GameObject m_shoot;
     public Transform m_transform;
     Rigidbody2D m_rgb;
@@ -47,7 +47,6 @@ public class MarioMove : MonoBehaviour
         m_henshin=FindObjectOfType<Henshin>();
         m_box= GetComponent<BoxCollider2D>();
         m_manager = FindObjectOfType<UIManager>();
-
     }
 
     // Update is called once per frame
@@ -143,6 +142,12 @@ public class MarioMove : MonoBehaviour
     #endregion
 
     #region WaitSecond
+    IEnumerator MinusHp()
+    {
+        hp = true;
+        yield return new WaitForSeconds(0.3f);
+        hp = false;
+    }
     // WaitForSecond để thay đỏi hoạt hình quay đầu
     IEnumerator ChangePicture()
     {
@@ -286,6 +291,23 @@ public class MarioMove : MonoBehaviour
             m_star_henshin++;
             m_manager.SetTextStar("x 0" + m_star_henshin);
         }
+        if (col.gameObject.CompareTag("reduce"))
+        {
+            if (m_star_henshin <= 1)
+            {
+                die = true;
+                ActiveMarioDie();
+            }
+            else
+            {
+                StartCoroutine(MinusHp());
+                m_star_henshin--;
+                m_manager.SetTextStar("x 0" + m_star_henshin);
+                MinusStar();
+            }
+        }
+
+
     }
     
     }
