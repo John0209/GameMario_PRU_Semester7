@@ -39,6 +39,8 @@ public class MarioMove : MonoBehaviour
     UIManager m_manager;
     public GameObject m_xu;
     public GameObject m_star;
+    [SerializeField]
+    public SaveMemory m_saveMemory;
     // Start is called before the first frame update
     void Start()
     {
@@ -66,6 +68,7 @@ public class MarioMove : MonoBehaviour
         SpeedRun();
         Skill();
         EatStar(); // điều kiện biến hình
+       // MinusStar();// giảm sao k đủ điều kiện thì tắt henshin
         if (fly) Flight(); // điều khiển mario khi bay
         // biến hình Hayyyyyoooooo
         if (henshin){
@@ -85,6 +88,15 @@ public class MarioMove : MonoBehaviour
                     break;
             }
         }
+        // check load scene , giữ data
+        if (m_saveMemory.isNext)
+        {
+            m_score = m_saveMemory.txt_Score;
+            m_manager.SetTextScore("x 0" + m_score);
+            m_star_henshin = m_saveMemory.txt_Star;
+            m_manager.SetTextStar("x 0" + m_star_henshin);
+            m_saveMemory.isNext= false;
+        }
     }
     
 
@@ -92,13 +104,13 @@ public class MarioMove : MonoBehaviour
     // Nếu đụng trúng enomy, sẽ trừ sao hạ cấp
     public void MinusStar()
     {
-        if (m_star_henshin < 2)
+        if (m_star_henshin < 3)
         {
             henshin = true;
             level = 1;
             m_manager.DisActiveButtonLv2();
         }
-        if (m_star_henshin < 3)
+        if (m_star_henshin < 5)
         {
             henshin = true;
             level = 2;
@@ -177,8 +189,8 @@ public class MarioMove : MonoBehaviour
     // Set Điều kiện để henshin
     void EatStar()
     {
-        if (m_star_henshin == 2) m_manager.ActiveButtonLv2();
-        if (m_star_henshin == 3) m_manager.ActiveButtonLv3();
+        if (m_star_henshin >= 3) m_manager.ActiveButtonLv2();
+        if (m_star_henshin >= 5) m_manager.ActiveButtonLv3();
     }
     // lăn tròn tấn công
     private void Skill()
@@ -267,7 +279,7 @@ public class MarioMove : MonoBehaviour
     }
     #endregion
 
-    private void OnCollisionEnter2D(Collision2D col)
+     private void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.CompareTag("ground"))// đứng trên đất
         {
@@ -307,7 +319,30 @@ public class MarioMove : MonoBehaviour
             }
         }
 
+    }
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.CompareTag("reduce"))
+        {
+            if (m_star_henshin <= 1)
+            {
+                die = true;
+                ActiveMarioDie();
+            }
+            else
+            {
+                StartCoroutine(MinusHp());
+                m_star_henshin--;
+                m_manager.SetTextStar("x 0" + m_star_henshin);
+                MinusStar();
+            }
+        }
+        if (col.gameObject.CompareTag("underGround"))//mario die
+        {
+            m_box.isTrigger = true;
+            die = true;
+            ActiveMarioDie();
+        }
+    }
 
-    }
-    
-    }
+}

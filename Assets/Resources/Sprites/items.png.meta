@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spuer_0
+      name: items_0
       rect:
         serializedVersion: 2
         x: 87
@@ -131,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39bdb63c2ac60c243984f0ac308ede60
-      internalID: -477992103
+      spriteID: 469fe120264417a4fa564a69eff6a565
+      internalID: 1001369443
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_1
+      name: items_1
       rect:
         serializedVersion: 2
         x: 136
@@ -152,14 +152,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe9911694999bb74da580e6c82e60a65
-      internalID: -2133601146
+      spriteID: dfa3800a2d4e9f449bdb2de05f72aa71
+      internalID: 426513483
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_2
+      name: items_2
       rect:
         serializedVersion: 2
         x: 185
@@ -173,14 +173,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0bfd1b9950c458c4a89828e6518baf8c
-      internalID: 925176234
+      spriteID: 56426e7750f67cd44a25e2f4e2118d8b
+      internalID: -792638946
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_3
+      name: items_3
       rect:
         serializedVersion: 2
         x: 234
@@ -194,14 +194,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0de570c590a57a745b1082ff5f3c4a46
-      internalID: 1018712517
+      spriteID: c843754420a539345a08ee1b2780d4be
+      internalID: 1714537269
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_4
+      name: items_4
       rect:
         serializedVersion: 2
         x: 286
@@ -215,14 +215,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 66f70d3a09b5b6d4b8cc1a7feef4630d
-      internalID: 1803408935
+      spriteID: d48d5ce066a950f41808e9eff1983d08
+      internalID: 1498979781
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_5
+      name: items_5
       rect:
         serializedVersion: 2
         x: 335
@@ -236,14 +236,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 769e74c9d1256a8469415394a5295e54
-      internalID: -1278169662
+      spriteID: f1152497e9c8a494688e48dcc8adb723
+      internalID: 1047990639
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_6
+      name: items_6
       rect:
         serializedVersion: 2
         x: 381
@@ -257,14 +257,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5940441deba190345b9c3d6095308146
-      internalID: 528490375
+      spriteID: 7d5ae7a4acdaa164bbac6af496196cea
+      internalID: 1104450935
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_7
+      name: items_7
       rect:
         serializedVersion: 2
         x: 430
@@ -278,14 +278,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8dcacd0af63ef4459e539fa58ce8dbe
-      internalID: 693812917
+      spriteID: dc08da4c2d5a0e346abe06ba4998d56e
+      internalID: 363979025
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_8
+      name: items_8
       rect:
         serializedVersion: 2
         x: 479
@@ -299,14 +299,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ae9a0dfb52f72e4a8202a4f03882155
-      internalID: -1604057198
+      spriteID: c4a45eae36035674181c18ccfa4835c5
+      internalID: 193358501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_9
+      name: items_9
       rect:
         serializedVersion: 2
         x: 528
@@ -320,14 +320,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8368f56d259f714f80b2eaf5a478839
-      internalID: 394990553
+      spriteID: aed52050a48a09745b870a6dd6f37923
+      internalID: -1573621004
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_10
+      name: items_10
       rect:
         serializedVersion: 2
         x: 586
@@ -341,14 +341,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 055ea63b9bf53e443ba636edbd529590
-      internalID: -1246353739
+      spriteID: 57b874c66b3ad8f4880d99f3211679dd
+      internalID: -1996803739
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_11
+      name: items_11
       rect:
         serializedVersion: 2
         x: 634
@@ -362,14 +362,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05ad4c6bfcf6984479fcad5c2d53aa57
-      internalID: -1283855450
+      spriteID: 7dc823690ff4fba40bc777ebbb6a3bf3
+      internalID: 1073089048
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_12
+      name: items_12
       rect:
         serializedVersion: 2
         x: 675
@@ -383,14 +383,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d4c87d04f8d3574b8c10ef39d41e0d9
-      internalID: 1638838130
+      spriteID: f593a6916a1af5546be4840fbacea840
+      internalID: -2124871504
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_13
+      name: items_13
       rect:
         serializedVersion: 2
         x: 724
@@ -404,14 +404,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b29cb0ac64c52d488defbce81960ee1
-      internalID: -1984052296
+      spriteID: 65b5c0c0c06475a408a336f145255b48
+      internalID: 849296630
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_14
+      name: items_14
       rect:
         serializedVersion: 2
         x: 93
@@ -425,14 +425,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e8aa14e2f38a8a4bb6203be5fa88f70
-      internalID: 340450114
+      spriteID: cacf0f23c9a07844b979fb85af7d9b53
+      internalID: -1647162747
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_15
+      name: items_15
       rect:
         serializedVersion: 2
         x: 136
@@ -446,14 +446,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e535e0eef3627554dba84a984674d56f
-      internalID: -1279913252
+      spriteID: a075a4ee204a9bc499eaac7264834f90
+      internalID: 1468127363
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_16
+      name: items_16
       rect:
         serializedVersion: 2
         x: 185
@@ -467,14 +467,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d0294f2e85a06c479c0e0f8227cb5eb
-      internalID: 1541488214
+      spriteID: 349d2d070aba4134198ca12245a552de
+      internalID: 407828822
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_17
+      name: items_17
       rect:
         serializedVersion: 2
         x: 234
@@ -488,14 +488,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a31ee95e4300aec4c979d8207e6edaba
-      internalID: -1039882611
+      spriteID: 1adab6c9982f4224ba8e0c54b4a04557
+      internalID: 1822608824
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_18
+      name: items_18
       rect:
         serializedVersion: 2
         x: 332
@@ -509,14 +509,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9590e8ef32c83e448c06d2cb55954cd
-      internalID: 577178038
+      spriteID: f93b33369e9a8984f8f233fa32fa373b
+      internalID: 877290554
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_19
+      name: items_19
       rect:
         serializedVersion: 2
         x: 381
@@ -530,14 +530,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6e32eac0c8f1f2747a7dab366bc28f06
-      internalID: 1060422479
+      spriteID: 0e2245a405756bd4687338ca0660e6ed
+      internalID: 14447134
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_20
+      name: items_20
       rect:
         serializedVersion: 2
         x: 430
@@ -551,14 +551,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 894636bf4e2da5941932703adc68519a
-      internalID: 917292116
+      spriteID: bdd7983d8b98c9041af00509ce849577
+      internalID: 570979582
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_21
+      name: items_21
       rect:
         serializedVersion: 2
         x: 479
@@ -572,14 +572,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7345dd1b36047e84d8653dc5d93cd423
-      internalID: -1543037732
+      spriteID: d9b1219ecdf2c3f48afe3cfe6f5ffd52
+      internalID: -1483093565
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_22
+      name: items_22
       rect:
         serializedVersion: 2
         x: 528
@@ -593,14 +593,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d401a8c7bd894149b6a7696994e8e51
-      internalID: -1522672533
+      spriteID: f5ab2608973883b429def73af1a40644
+      internalID: 952615151
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_23
+      name: items_23
       rect:
         serializedVersion: 2
         x: 577
@@ -614,14 +614,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2dab88e1adc37884fa2f45e02d13d6c2
-      internalID: 1841076161
+      spriteID: 4864984c529391341974cb1e76e2c2fa
+      internalID: 587152315
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_24
+      name: items_24
       rect:
         serializedVersion: 2
         x: 626
@@ -635,20 +635,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6ed9be3612142d4ab74acc548b73396
-      internalID: -792384233
+      spriteID: b58c99a32472fdd4a94a455f1512f4f7
+      internalID: -826023018
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_25
+      name: items_25
       rect:
         serializedVersion: 2
         x: 675
         y: 528
         width: 48
-        height: 63
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -656,14 +656,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1183e891a32bd204bae2c792c7cdb116
-      internalID: 2146044332
+      spriteID: 814945af8f202264488b423d76810872
+      internalID: -160116461
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_26
+      name: items_26
       rect:
         serializedVersion: 2
         x: 724
@@ -677,14 +677,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a5dc2c8efbfae64aa7543da49a4d427
-      internalID: 2065437436
+      spriteID: 1e199e46f4a142043ab9cfe7d6a0c4f7
+      internalID: 1714911272
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_27
+      name: items_27
       rect:
         serializedVersion: 2
         x: 87
@@ -698,14 +698,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d7ad373f5ec8c3488978592f1a1071c
-      internalID: 2037684574
+      spriteID: 54b88851c1f92dc40bd383e7c76725f0
+      internalID: -121645239
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_28
+      name: items_28
       rect:
         serializedVersion: 2
         x: 136
@@ -719,14 +719,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7482761a09ef8c548a02dc97127d4e8a
-      internalID: -1391781798
+      spriteID: 792f6a89a13158140b92ab33a9f90d0c
+      internalID: -322402829
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_29
+      name: items_29
       rect:
         serializedVersion: 2
         x: 185
@@ -740,18 +740,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7b5fbd7d3865874c976076f311ec7a9
-      internalID: -548793410
+      spriteID: 10740681ec826ca4a8a513b9599a2224
+      internalID: -3870820
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_30
+      name: items_30
       rect:
         serializedVersion: 2
         x: 234
-        y: 462
+        y: 463
         width: 48
         height: 63
       alignment: 0
@@ -761,14 +761,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d82e45366e71d6e46b1066ee4398a411
-      internalID: 1202174725
+      spriteID: 403d04883cbb53a4b91a8c3be76ea9ba
+      internalID: -1870709458
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_31
+      name: items_31
       rect:
         serializedVersion: 2
         x: 283
@@ -782,14 +782,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58dfd5a13bf6e094ca7a68dc2ffa760c
-      internalID: 738857820
+      spriteID: d846c440810eafc449f6f99908ddcc23
+      internalID: -1117210155
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_32
+      name: items_32
       rect:
         serializedVersion: 2
         x: 332
@@ -803,14 +803,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a2e8698578f9494bbbd30213338a07c
-      internalID: 1878694700
+      spriteID: 7f6ae91cd4f40c549ba4de5454441fd2
+      internalID: 756356366
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_33
+      name: items_33
       rect:
         serializedVersion: 2
         x: 381
@@ -824,14 +824,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b73990e9aaf77d409aea77a12d50857
-      internalID: -491958497
+      spriteID: 610e50bc5da1ddc4d8beb70a4db98373
+      internalID: 28946574
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_34
+      name: items_34
       rect:
         serializedVersion: 2
         x: 430
@@ -845,14 +845,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c123adf84be043498dd672bfcceec58
-      internalID: -357778841
+      spriteID: ba060467ca71bf54dab0abdb3f3d431f
+      internalID: -930636815
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_35
+      name: items_35
       rect:
         serializedVersion: 2
         x: 479
@@ -866,14 +866,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8167c0281ed0add42ac3cb57d838c481
-      internalID: -684683786
+      spriteID: 0c1a1a7030f37e4469da16756506b38f
+      internalID: -1590907925
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_36
+      name: items_36
       rect:
         serializedVersion: 2
         x: 528
@@ -887,14 +887,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3aa23530501a674418bd892c62ebbda4
-      internalID: -445972679
+      spriteID: a0084a935a270934a88534a393e79540
+      internalID: -2069028732
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_37
+      name: items_37
       rect:
         serializedVersion: 2
         x: 577
@@ -908,14 +908,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf401b195d600de4cae717322aede8a1
-      internalID: -1186815660
+      spriteID: 1658f0b8d2c975442aafab383cf42761
+      internalID: 1052461497
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_38
+      name: items_38
       rect:
         serializedVersion: 2
         x: 626
@@ -929,14 +929,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a765f00e8e4dec4d9ebab4190f5ff72
-      internalID: 1050786762
+      spriteID: b7f41d8e4da36fa43b7e6ba7cd337d4d
+      internalID: -1828354448
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_39
+      name: items_39
       rect:
         serializedVersion: 2
         x: 675
@@ -950,14 +950,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 321989c4e8db9f245a207e0c35ad06ff
-      internalID: 136282499
+      spriteID: 011c992963413a24c95b0e30281f06ac
+      internalID: 379232264
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_40
+      name: items_40
       rect:
         serializedVersion: 2
         x: 724
@@ -971,14 +971,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 186a967e85d9f71418910ced7cc5c054
-      internalID: 1235941335
+      spriteID: 7d883b162602ab0459d841b8823a9594
+      internalID: -1763006264
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_41
+      name: items_41
       rect:
         serializedVersion: 2
         x: 87
@@ -992,14 +992,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc4b3333bafd42e4d9d403a4e3a75a78
-      internalID: 353467301
+      spriteID: 65860432a7af24d40a2e50349f046e22
+      internalID: -994258147
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_42
+      name: items_42
       rect:
         serializedVersion: 2
         x: 136
@@ -1013,14 +1013,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 341618268ec73ca4dafe58baa35dbafd
-      internalID: -1430784980
+      spriteID: 268608e7b2043e14cab8b9747960e3fe
+      internalID: 1718597866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_43
+      name: items_43
       rect:
         serializedVersion: 2
         x: 185
@@ -1034,14 +1034,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ea0be8f2d0c6a64db8847abe5bbcb9e
-      internalID: 249354467
+      spriteID: d4d0ac0754a5878478a56a62756d2a4a
+      internalID: 1482427304
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_44
+      name: items_44
       rect:
         serializedVersion: 2
         x: 234
@@ -1055,14 +1055,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aaac32a71557aa041af040b804269392
-      internalID: -319543362
+      spriteID: c71fc24192b28f44eb41646f8e1c0acd
+      internalID: -1201764357
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_45
+      name: items_45
       rect:
         serializedVersion: 2
         x: 283
@@ -1076,14 +1076,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3dc01964a06050646924c294902e6918
-      internalID: -1746906550
+      spriteID: d9feabaf56c568d4794aa916a27b6d8d
+      internalID: 18713877
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_46
+      name: items_46
       rect:
         serializedVersion: 2
         x: 332
@@ -1097,14 +1097,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7bfd9433b8b941d4280a062f0458bded
-      internalID: -2126342758
+      spriteID: 4a873b3aa6fb2a9418165643e707767b
+      internalID: -558860667
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_47
+      name: items_47
       rect:
         serializedVersion: 2
         x: 381
@@ -1118,14 +1118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a865c9b734f6c944fb2f1f951cd9ea7b
-      internalID: 1232564235
+      spriteID: 46d551e91f12d2f4e98fc0ebedd4a088
+      internalID: 328641005
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_48
+      name: items_48
       rect:
         serializedVersion: 2
         x: 430
@@ -1139,14 +1139,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3cbdfc21f9267a4490afdb45bf2171f
-      internalID: -1092214622
+      spriteID: e1804d3e27f44e44882e122c9612b83c
+      internalID: 1098467221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_49
+      name: items_49
       rect:
         serializedVersion: 2
         x: 479
@@ -1160,14 +1160,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb6e982a349dcfa4bb30d85b52613632
-      internalID: 1144109422
+      spriteID: 6cf9cdb6f6e2ece4fa49cc070b55b530
+      internalID: -1584907414
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_50
+      name: items_50
       rect:
         serializedVersion: 2
         x: 528
@@ -1181,14 +1181,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0866dc2b0939e44582c79f771898d64
-      internalID: -1122369314
+      spriteID: 98c292119293c0548bc8770324ffcc69
+      internalID: 103316806
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_51
+      name: items_51
       rect:
         serializedVersion: 2
         x: 577
@@ -1202,14 +1202,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 474d37099a956c342b65a6a830527781
-      internalID: 1836291996
+      spriteID: 465b31f9b29f32f46b82380526a31eac
+      internalID: -1047411805
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_52
+      name: items_52
       rect:
         serializedVersion: 2
         x: 626
@@ -1223,14 +1223,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c5b31b22cc53ee4bae8538de12f066b
-      internalID: -1958606628
+      spriteID: e9c22eb4551da8a45bcc4f3969a2631b
+      internalID: 40506764
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_53
+      name: items_53
       rect:
         serializedVersion: 2
         x: 675
@@ -1244,14 +1244,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dad319b6de32af947ba72af757d56c43
-      internalID: -1465793678
+      spriteID: 783b943071997744ab561855e2599784
+      internalID: -1755898880
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_54
+      name: items_54
       rect:
         serializedVersion: 2
         x: 724
@@ -1265,14 +1265,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba9185d851e10fa4a84a4e8c59cfb850
-      internalID: 420405133
+      spriteID: 04016358b1081f54382447899db211b1
+      internalID: -530697163
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_55
+      name: items_55
       rect:
         serializedVersion: 2
         x: 87
@@ -1286,14 +1286,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3ae916a2246a8c4ebe31f594215596b
-      internalID: 988170534
+      spriteID: e656ff65e322c0f498f1e88e56dfbde3
+      internalID: -727977240
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_56
+      name: items_56
       rect:
         serializedVersion: 2
         x: 136
@@ -1307,14 +1307,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8de567c7275b6db429bb14561108cb3e
-      internalID: -1356384447
+      spriteID: 53ebe9de38e6d8a4dbd86fe1f254bbac
+      internalID: 217680868
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_57
+      name: items_57
       rect:
         serializedVersion: 2
         x: 185
@@ -1328,14 +1328,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9678a723b2f29d54caa5d66ba3cfc1ea
-      internalID: 1029422072
+      spriteID: 3c761258a653b8d4eafda1bb3a45a6f4
+      internalID: 393621752
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_58
+      name: items_58
       rect:
         serializedVersion: 2
         x: 234
@@ -1349,14 +1349,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47a427cbcdd0e4e4984d11a25c7af2c4
-      internalID: -317765544
+      spriteID: ce2ec00f41e4a704694cfa82022afd3c
+      internalID: 1489193958
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_59
+      name: items_59
       rect:
         serializedVersion: 2
         x: 283
@@ -1370,14 +1370,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84024f378b61ca044a25587e21e7f8a7
-      internalID: -19396362
+      spriteID: 489b2eb5186fe524e84a4e1812e7da28
+      internalID: -1301503214
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_60
+      name: items_60
       rect:
         serializedVersion: 2
         x: 332
@@ -1391,14 +1391,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a164dc3641410f4eb9867fa1b9f1be6
-      internalID: -1109729895
+      spriteID: 87b050f516e0684458c42fbefa0ed933
+      internalID: 1646945039
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_61
+      name: items_61
       rect:
         serializedVersion: 2
         x: 381
@@ -1412,14 +1412,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a976bdb2a2a045e4397d2a55bd14f333
-      internalID: 1046290644
+      spriteID: ae10b1eceab3ff6478a05da7b4a264fb
+      internalID: 632882772
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_62
+      name: items_62
       rect:
         serializedVersion: 2
         x: 430
@@ -1433,14 +1433,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01e4a2ed03b64fb4f827a79c82366074
-      internalID: 692702091
+      spriteID: e24908aa27ce9a941892fbf2cbeee941
+      internalID: 16059501
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_63
+      name: items_63
       rect:
         serializedVersion: 2
         x: 479
@@ -1454,14 +1454,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d1dfbf65beeea448a6cf3b9f9fca756
-      internalID: -1446914457
+      spriteID: c18f0c42f1f9d564b8bd54aa43be6d39
+      internalID: 91127064
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_64
+      name: items_64
       rect:
         serializedVersion: 2
         x: 528
@@ -1475,14 +1475,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4942f7afbb015148a14b54845c9eb68
-      internalID: -137711104
+      spriteID: 94bad040b109a8c4394f8052ccd33de4
+      internalID: 165160269
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_65
+      name: items_65
       rect:
         serializedVersion: 2
         x: 577
@@ -1496,14 +1496,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f624ea7c9b2c77a459d57a6326335fde
-      internalID: -1928555911
+      spriteID: 2cf520cdedf83f44688b827f94660f77
+      internalID: 770583619
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_66
+      name: items_66
       rect:
         serializedVersion: 2
         x: 626
@@ -1517,14 +1517,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6e9e8d501e259241aa2af9e15798a7c
-      internalID: -1207699643
+      spriteID: 4a4d3aa69e699e04abf2dc8ef058cf07
+      internalID: -1343090744
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_67
+      name: items_67
       rect:
         serializedVersion: 2
         x: 675
@@ -1538,14 +1538,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5f4a6c8604226f4ebfd7f179cffa64c
-      internalID: 1187617189
+      spriteID: f33f7a127c6850d4e8ca2aa74ed4a332
+      internalID: 565237894
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_68
+      name: items_68
       rect:
         serializedVersion: 2
         x: 724
@@ -1559,14 +1559,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d95571ea961145e46bf2806a752a501c
-      internalID: -1694527879
+      spriteID: 2e9ddbcb5138bcc4189ab153b6ee3d8a
+      internalID: 1944891985
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_69
+      name: items_69
       rect:
         serializedVersion: 2
         x: 87
@@ -1580,14 +1580,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c019a213bb3bfa409de4eded070e09c
-      internalID: 1477244747
+      spriteID: d4fac41c717bb8d4f9d2c65f51d05136
+      internalID: -378904016
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_70
+      name: items_70
       rect:
         serializedVersion: 2
         x: 150
@@ -1601,14 +1601,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1deb3e44f516a9445857114db464924e
-      internalID: -276783208
+      spriteID: 66948b9b838b75a498ba5b764f38c178
+      internalID: 1593499615
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_71
+      name: items_71
       rect:
         serializedVersion: 2
         x: 185
@@ -1622,14 +1622,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac2eb76b3258f1c4aa4c15cda2b78b3e
-      internalID: -1620508751
+      spriteID: 047d53a1ec54c444b8e93e50e0da9072
+      internalID: -930890985
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_72
+      name: items_72
       rect:
         serializedVersion: 2
         x: 307
@@ -1643,14 +1643,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 720b4a639678c8543ba3e8dc496ea87b
-      internalID: -239805295
+      spriteID: a1516a858cfe40c41b1804be06fedc59
+      internalID: -1498714649
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_73
+      name: items_73
       rect:
         serializedVersion: 2
         x: 356
@@ -1664,14 +1664,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 065e6bc4181a50c45bc65e6ce21cf6e0
-      internalID: 1735593430
+      spriteID: 58c610b2e3ab23a4ea4656aa4de3397d
+      internalID: -124592403
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_74
+      name: items_74
       rect:
         serializedVersion: 2
         x: 397
@@ -1685,14 +1685,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc1a0ba6b9d269b4f8a6fd8f056702b6
-      internalID: -1780879791
+      spriteID: d05f4ff746071814eb3531fa28b97abc
+      internalID: 1434965993
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_75
+      name: items_75
       rect:
         serializedVersion: 2
         x: 446
@@ -1706,14 +1706,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6c563a75fe712a245970649c2875a61b
-      internalID: 1669724570
+      spriteID: 1cc379450e9b51e4ab9ee512b47cf386
+      internalID: -1442160484
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_76
+      name: items_76
       rect:
         serializedVersion: 2
         x: 495
@@ -1727,14 +1727,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a7aba5b1302c4a4a8fb43282e417c9b
-      internalID: -864367965
+      spriteID: 1e9a3e00821534142a78fe89860e1700
+      internalID: 1998091311
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_77
+      name: items_77
       rect:
         serializedVersion: 2
         x: 544
@@ -1748,14 +1748,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f72563263bb80943b6505cb4615048d
-      internalID: -1638651195
+      spriteID: 65e770f9d1a52fc4593141389129b5e9
+      internalID: -1828050477
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_78
+      name: items_78
       rect:
         serializedVersion: 2
         x: 593
@@ -1769,14 +1769,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0accf6078b7d81644be1cebcf0c59116
-      internalID: 1466167955
+      spriteID: faaf22780fc0499408ca57654241f139
+      internalID: -692482897
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_79
+      name: items_79
       rect:
         serializedVersion: 2
         x: 642
@@ -1790,14 +1790,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e7a62b1c36d903479adfedf11a4a3c9
-      internalID: -1963789619
+      spriteID: aa0ba158b05705642afda42ab960df6a
+      internalID: 940050512
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_80
+      name: items_80
       rect:
         serializedVersion: 2
         x: 497
@@ -1811,14 +1811,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69032001236605b4d8fb642e344ac01a
-      internalID: -1330730306
+      spriteID: b836df305e6b59243b82862568094e30
+      internalID: 1068771483
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_81
+      name: items_81
       rect:
         serializedVersion: 2
         x: 521
@@ -1832,14 +1832,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e708fa1888e1cfe4393d93f2dd5b4841
-      internalID: -694237540
+      spriteID: 8bef2890e929f164cb6f58f526f00317
+      internalID: 2066926952
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_82
+      name: items_82
       rect:
         serializedVersion: 2
         x: 691
@@ -1853,14 +1853,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6727eea237c77e44ab2972cf6fc8041d
-      internalID: 722488705
+      spriteID: e994fa555c0a0cb4d89e7fede0d62aec
+      internalID: -481918228
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_83
+      name: items_83
       rect:
         serializedVersion: 2
         x: 136
@@ -1874,14 +1874,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84953ee13094f2c45b5e568748a4c2ff
-      internalID: -312261802
+      spriteID: 1c4e7d9eb170f1c4a98d58cf4a33ae65
+      internalID: -1584872624
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_84
+      name: items_84
       rect:
         serializedVersion: 2
         x: 495
@@ -1895,14 +1895,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 032eb5f0aba8f2844845e7f87a01afce
-      internalID: 1294721705
+      spriteID: bbf8f283f036b20409179b310d00ba33
+      internalID: -671375632
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_85
+      name: items_85
       rect:
         serializedVersion: 2
         x: 87
@@ -1916,14 +1916,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55d5705d995b0364fbc91f3dff3097c5
-      internalID: -1361725356
+      spriteID: 5f6f9f16ec3672847bbb6fc137f4c7fe
+      internalID: 115319111
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_86
+      name: items_86
       rect:
         serializedVersion: 2
         x: 136
@@ -1937,14 +1937,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0ae2fb3e6f84b04fb55fc0c7dd8a3b2
-      internalID: 199604272
+      spriteID: 7ab3793d5cba6d840a8fe15c3c1149ea
+      internalID: -68546547
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_87
+      name: items_87
       rect:
         serializedVersion: 2
         x: 185
@@ -1958,14 +1958,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75d57f9423267e74e86b583517625a82
-      internalID: 737174142
+      spriteID: 7e88c8d7e77949f41a402ba0716d1095
+      internalID: -1722250697
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_88
+      name: items_88
       rect:
         serializedVersion: 2
         x: 234
@@ -1979,14 +1979,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2042175561370e544ba6a3808e26d459
-      internalID: -718817056
+      spriteID: a3b4f81a9518a5d46ace05b5a1be3c3f
+      internalID: -793414289
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_89
+      name: items_89
       rect:
         serializedVersion: 2
         x: 283
@@ -2000,14 +2000,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c724c49ed15eb6c4c944cc87e5ec7fdc
-      internalID: -1013060653
+      spriteID: 27c7652664093cb49ba14d016ca7a153
+      internalID: -499714009
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_90
+      name: items_90
       rect:
         serializedVersion: 2
         x: 332
@@ -2021,14 +2021,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36a2d63290234074b811c8bd9b7b2b46
-      internalID: 1707987616
+      spriteID: b212770aafe2fc244a921c897b325f00
+      internalID: 1605794246
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_91
+      name: items_91
       rect:
         serializedVersion: 2
         x: 381
@@ -2042,14 +2042,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75587a3ca16ebc74cb410b60560e4494
-      internalID: -2075861016
+      spriteID: ba6247767c4e6b149b4cf8c37a769bf4
+      internalID: 1275881114
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_92
+      name: items_92
       rect:
         serializedVersion: 2
         x: 430
@@ -2063,14 +2063,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99baa80964cffad4193b18e1845394fc
-      internalID: -1419932682
+      spriteID: ec25d340711cc19428d289fadcab9f81
+      internalID: 1542402926
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_93
+      name: items_93
       rect:
         serializedVersion: 2
         x: 479
@@ -2084,14 +2084,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cce27c9f895c773488a2a3cd720be4f9
-      internalID: 2001174635
+      spriteID: 65264c801ea5d1a499e8d797ea520749
+      internalID: 2048771852
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_94
+      name: items_94
       rect:
         serializedVersion: 2
         x: 528
@@ -2105,14 +2105,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a31d3ba659c22db4786dcdbd1d193d36
-      internalID: 340527581
+      spriteID: c0fb0ab8f1d286e43bcf436e152b95cb
+      internalID: -1708639531
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_95
+      name: items_95
       rect:
         serializedVersion: 2
         x: 577
@@ -2126,14 +2126,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1cf9162a46cc8f42a16c2f20e1712cf
-      internalID: -1800179962
+      spriteID: 5b92e51991777734197d6640dce9a69e
+      internalID: -1346114296
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_96
+      name: items_96
       rect:
         serializedVersion: 2
         x: 626
@@ -2147,14 +2147,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6c870edce4f7ae46adda9ae67f36a41
-      internalID: -2061687002
+      spriteID: 4435b2811b8ba5d499e1b3772d817f5d
+      internalID: 1862740202
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_97
+      name: items_97
       rect:
         serializedVersion: 2
         x: 675
@@ -2168,14 +2168,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd753f91ac3e71243bd63b29477ef86c
-      internalID: 181785486
+      spriteID: d093a669690ba5e40bacd7e83b7b37b4
+      internalID: 708231572
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_98
+      name: items_98
       rect:
         serializedVersion: 2
         x: 724
@@ -2189,14 +2189,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7196a4cb76e56564193d04c0979d1501
-      internalID: -532071536
+      spriteID: d3a21f09db340a74da73bbc5df537ff2
+      internalID: 75425112
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_99
+      name: items_99
       rect:
         serializedVersion: 2
         x: 87
@@ -2210,14 +2210,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25b6bb509997661449cf1777f5e74b65
-      internalID: -1044680968
+      spriteID: 583b45f3b066b0f42a36cd490dae6fc6
+      internalID: 1859464240
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_100
+      name: items_100
       rect:
         serializedVersion: 2
         x: 136
@@ -2231,14 +2231,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 455e3511af223f643ae413ee3443c303
-      internalID: 647550082
+      spriteID: 8218c9075c106ce40a8ec3fc5d1795cc
+      internalID: 937979360
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_101
+      name: items_101
       rect:
         serializedVersion: 2
         x: 185
@@ -2252,14 +2252,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ed7ac6dc55aaae4390812a2f8143852
-      internalID: 685419161
+      spriteID: 64302f7758ae0c0419e31c5e443d85af
+      internalID: 43617858
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_102
+      name: items_102
       rect:
         serializedVersion: 2
         x: 234
@@ -2273,14 +2273,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9008315a9509b7b4498e978ad213d7de
-      internalID: -409953243
+      spriteID: 0c65a8edf5ecef14bbf4d06d8117635f
+      internalID: 1161962256
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_103
+      name: items_103
       rect:
         serializedVersion: 2
         x: 283
@@ -2294,14 +2294,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a15e406d439795546a86509b344b47fa
-      internalID: 1911010475
+      spriteID: 75e268e4fe125cb4593b8a9f56af6680
+      internalID: 506990536
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_104
+      name: items_104
       rect:
         serializedVersion: 2
         x: 332
@@ -2315,14 +2315,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a404d7b138edc404b8290c8e55f70962
-      internalID: 1733052891
+      spriteID: a3f9f59f61a69ae43b8fd0be003813a0
+      internalID: 1885873275
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_105
+      name: items_105
       rect:
         serializedVersion: 2
         x: 332
@@ -2336,14 +2336,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e22b8ba1f8bc8049a27ef581a8288fa
-      internalID: 1070220280
+      spriteID: 1d7ce25c34c3d0a4b9e9262b3df0c325
+      internalID: 1708773866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_106
+      name: items_106
       rect:
         serializedVersion: 2
         x: 479
@@ -2357,14 +2357,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3d8323ac193c2e4b9789e3aa4372d22
-      internalID: 1984716498
+      spriteID: 218366070304d1e4ea1d591838058469
+      internalID: -192566513
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_107
+      name: items_107
       rect:
         serializedVersion: 2
         x: 530
@@ -2378,14 +2378,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3d5162d1f6559047b5d12acd839fede
-      internalID: -1511421692
+      spriteID: 5a423a4bd97cb9d459e9c28387bd24b8
+      internalID: -1747109379
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_108
+      name: items_108
       rect:
         serializedVersion: 2
         x: 577
@@ -2399,14 +2399,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6cc2e1a5db8fd5747bcf01dcff49f5ab
-      internalID: -650696353
+      spriteID: 71a753e70f150614fb929ebfc88a32bc
+      internalID: 916089004
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_109
+      name: items_109
       rect:
         serializedVersion: 2
         x: 626
@@ -2420,14 +2420,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7f56efb16422964d84da517774aba96
-      internalID: 769513400
+      spriteID: 7daa1325317cf3348a3d01ddc991be39
+      internalID: -347048852
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_110
+      name: items_110
       rect:
         serializedVersion: 2
         x: 675
@@ -2441,14 +2441,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57a44f5c699b6ce4b96ea2dc8eccce5b
-      internalID: 482944712
+      spriteID: f09d000e4e13f8e4ba31d3b897254f11
+      internalID: -2068470167
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_111
+      name: items_111
       rect:
         serializedVersion: 2
         x: 724
@@ -2462,14 +2462,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37dd91923f6e2724ea0345168f9c210b
-      internalID: -1654757558
+      spriteID: d6325c9e5a579dc49b89290438921ad7
+      internalID: -1259137214
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_112
+      name: items_112
       rect:
         serializedVersion: 2
         x: 87
@@ -2483,14 +2483,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ee7ec91a3ecc8e49a59126db02899f3
-      internalID: -458056866
+      spriteID: 50198ced9863e7741ac609397822a93a
+      internalID: 233004146
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_113
+      name: items_113
       rect:
         serializedVersion: 2
         x: 136
@@ -2504,14 +2504,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59c33ac63131cd646889ab24df553164
-      internalID: 917005585
+      spriteID: 3b8b999d7e100d048b9df3c2b63b8620
+      internalID: -1944285437
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_114
+      name: items_114
       rect:
         serializedVersion: 2
         x: 185
@@ -2525,14 +2525,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 38da9fede19ab154d9f380b5d541b6f1
-      internalID: -252747067
+      spriteID: 560c950d549a70f468cadb2a50318ce3
+      internalID: -1146481937
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_115
+      name: items_115
       rect:
         serializedVersion: 2
         x: 236
@@ -2546,14 +2546,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 098dcf458ea1b6842ba3186c20a7beba
-      internalID: 1428098272
+      spriteID: 4cf1d2a8e8d9fef4e97ad2c8240d56b2
+      internalID: -553548290
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_116
+      name: items_116
       rect:
         serializedVersion: 2
         x: 283
@@ -2567,14 +2567,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64b9c367c3864cc4a87dcd9e34a17dd2
-      internalID: 1356822723
+      spriteID: fcc6747bb4f722846b9e435691213190
+      internalID: 660429983
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_117
+      name: items_117
       rect:
         serializedVersion: 2
         x: 332
@@ -2588,14 +2588,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0afdb07b36bbbb041b78ea7101e80afc
-      internalID: -906142898
+      spriteID: 98d7f4c9be5818245ac4f6f9157c6004
+      internalID: 122338966
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_118
+      name: items_118
       rect:
         serializedVersion: 2
         x: 381
@@ -2609,14 +2609,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3671fa22b7eeb4c4fbc78984ba4f692c
-      internalID: -2075327748
+      spriteID: 9c099feb8ae13f946b42e243c8cc863b
+      internalID: 2129495823
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_119
+      name: items_119
       rect:
         serializedVersion: 2
         x: 436
@@ -2630,14 +2630,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7df989911dc9b774d8c125bc7aa23bbb
-      internalID: 1370034644
+      spriteID: 6a3d17560c95dc64a928c129bb8bfa40
+      internalID: -1469598361
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_120
+      name: items_120
       rect:
         serializedVersion: 2
         x: 480
@@ -2651,14 +2651,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cca8276f6116ceb4a9f51f2a6a3de81f
-      internalID: 1536592350
+      spriteID: 60eafc27cccaec64595ed5d44a146a2c
+      internalID: 673438183
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_121
+      name: items_121
       rect:
         serializedVersion: 2
         x: 531
@@ -2672,14 +2672,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 690c7355d6e77e949b04c8f4ffba280b
-      internalID: -1457298583
+      spriteID: 99f9689c898570b408d20c55d6a4558d
+      internalID: -265382648
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_122
+      name: items_122
       rect:
         serializedVersion: 2
         x: 577
@@ -2693,14 +2693,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52874a74420da0c48a878194529342a6
-      internalID: 1085357872
+      spriteID: 8cd0b72b6d75c2b42aba290502b2865c
+      internalID: -1514221484
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spuer_123
+      name: items_123
       rect:
         serializedVersion: 2
         x: 626
@@ -2714,8 +2714,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2051e732db8a5543a37d0c3069848d5
-      internalID: -440386613
+      spriteID: 701cc7120c26f0b4bbc5927fdb3dc8e5
+      internalID: -1115931991
       vertices: []
       indices: 
       edges: []
@@ -2731,130 +2731,130 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      spuer_0: -477992103
-      spuer_1: -2133601146
-      spuer_10: -1246353739
-      spuer_100: 647550082
-      spuer_101: 685419161
-      spuer_102: -409953243
-      spuer_103: 1911010475
-      spuer_104: 1733052891
-      spuer_105: 1070220280
-      spuer_106: 1984716498
-      spuer_107: -1511421692
-      spuer_108: -650696353
-      spuer_109: 769513400
-      spuer_11: -1283855450
-      spuer_110: 482944712
-      spuer_111: -1654757558
-      spuer_112: -458056866
-      spuer_113: 917005585
-      spuer_114: -252747067
-      spuer_115: 1428098272
-      spuer_116: 1356822723
-      spuer_117: -906142898
-      spuer_118: -2075327748
-      spuer_119: 1370034644
-      spuer_12: 1638838130
-      spuer_120: 1536592350
-      spuer_121: -1457298583
-      spuer_122: 1085357872
-      spuer_123: -440386613
-      spuer_13: -1984052296
-      spuer_14: 340450114
-      spuer_15: -1279913252
-      spuer_16: 1541488214
-      spuer_17: -1039882611
-      spuer_18: 577178038
-      spuer_19: 1060422479
-      spuer_2: 925176234
-      spuer_20: 917292116
-      spuer_21: -1543037732
-      spuer_22: -1522672533
-      spuer_23: 1841076161
-      spuer_24: -792384233
-      spuer_25: 2146044332
-      spuer_26: 2065437436
-      spuer_27: 2037684574
-      spuer_28: -1391781798
-      spuer_29: -548793410
-      spuer_3: 1018712517
-      spuer_30: 1202174725
-      spuer_31: 738857820
-      spuer_32: 1878694700
-      spuer_33: -491958497
-      spuer_34: -357778841
-      spuer_35: -684683786
-      spuer_36: -445972679
-      spuer_37: -1186815660
-      spuer_38: 1050786762
-      spuer_39: 136282499
-      spuer_4: 1803408935
-      spuer_40: 1235941335
-      spuer_41: 353467301
-      spuer_42: -1430784980
-      spuer_43: 249354467
-      spuer_44: -319543362
-      spuer_45: -1746906550
-      spuer_46: -2126342758
-      spuer_47: 1232564235
-      spuer_48: -1092214622
-      spuer_49: 1144109422
-      spuer_5: -1278169662
-      spuer_50: -1122369314
-      spuer_51: 1836291996
-      spuer_52: -1958606628
-      spuer_53: -1465793678
-      spuer_54: 420405133
-      spuer_55: 988170534
-      spuer_56: -1356384447
-      spuer_57: 1029422072
-      spuer_58: -317765544
-      spuer_59: -19396362
-      spuer_6: 528490375
-      spuer_60: -1109729895
-      spuer_61: 1046290644
-      spuer_62: 692702091
-      spuer_63: -1446914457
-      spuer_64: -137711104
-      spuer_65: -1928555911
-      spuer_66: -1207699643
-      spuer_67: 1187617189
-      spuer_68: -1694527879
-      spuer_69: 1477244747
-      spuer_7: 693812917
-      spuer_70: -276783208
-      spuer_71: -1620508751
-      spuer_72: -239805295
-      spuer_73: 1735593430
-      spuer_74: -1780879791
-      spuer_75: 1669724570
-      spuer_76: -864367965
-      spuer_77: -1638651195
-      spuer_78: 1466167955
-      spuer_79: -1963789619
-      spuer_8: -1604057198
-      spuer_80: -1330730306
-      spuer_81: -694237540
-      spuer_82: 722488705
-      spuer_83: -312261802
-      spuer_84: 1294721705
-      spuer_85: -1361725356
-      spuer_86: 199604272
-      spuer_87: 737174142
-      spuer_88: -718817056
-      spuer_89: -1013060653
-      spuer_9: 394990553
-      spuer_90: 1707987616
-      spuer_91: -2075861016
-      spuer_92: -1419932682
-      spuer_93: 2001174635
-      spuer_94: 340527581
-      spuer_95: -1800179962
-      spuer_96: -2061687002
-      spuer_97: 181785486
-      spuer_98: -532071536
-      spuer_99: -1044680968
+      items_0: 1001369443
+      items_1: 426513483
+      items_10: -1996803739
+      items_100: 937979360
+      items_101: 43617858
+      items_102: 1161962256
+      items_103: 506990536
+      items_104: 1885873275
+      items_105: 1708773866
+      items_106: -192566513
+      items_107: -1747109379
+      items_108: 916089004
+      items_109: -347048852
+      items_11: 1073089048
+      items_110: -2068470167
+      items_111: -1259137214
+      items_112: 233004146
+      items_113: -1944285437
+      items_114: -1146481937
+      items_115: -553548290
+      items_116: 660429983
+      items_117: 122338966
+      items_118: 2129495823
+      items_119: -1469598361
+      items_12: -2124871504
+      items_120: 673438183
+      items_121: -265382648
+      items_122: -1514221484
+      items_123: -1115931991
+      items_13: 849296630
+      items_14: -1647162747
+      items_15: 1468127363
+      items_16: 407828822
+      items_17: 1822608824
+      items_18: 877290554
+      items_19: 14447134
+      items_2: -792638946
+      items_20: 570979582
+      items_21: -1483093565
+      items_22: 952615151
+      items_23: 587152315
+      items_24: -826023018
+      items_25: -160116461
+      items_26: 1714911272
+      items_27: -121645239
+      items_28: -322402829
+      items_29: -3870820
+      items_3: 1714537269
+      items_30: -1870709458
+      items_31: -1117210155
+      items_32: 756356366
+      items_33: 28946574
+      items_34: -930636815
+      items_35: -1590907925
+      items_36: -2069028732
+      items_37: 1052461497
+      items_38: -1828354448
+      items_39: 379232264
+      items_4: 1498979781
+      items_40: -1763006264
+      items_41: -994258147
+      items_42: 1718597866
+      items_43: 1482427304
+      items_44: -1201764357
+      items_45: 18713877
+      items_46: -558860667
+      items_47: 328641005
+      items_48: 1098467221
+      items_49: -1584907414
+      items_5: 1047990639
+      items_50: 103316806
+      items_51: -1047411805
+      items_52: 40506764
+      items_53: -1755898880
+      items_54: -530697163
+      items_55: -727977240
+      items_56: 217680868
+      items_57: 393621752
+      items_58: 1489193958
+      items_59: -1301503214
+      items_6: 1104450935
+      items_60: 1646945039
+      items_61: 632882772
+      items_62: 16059501
+      items_63: 91127064
+      items_64: 165160269
+      items_65: 770583619
+      items_66: -1343090744
+      items_67: 565237894
+      items_68: 1944891985
+      items_69: -378904016
+      items_7: 363979025
+      items_70: 1593499615
+      items_71: -930890985
+      items_72: -1498714649
+      items_73: -124592403
+      items_74: 1434965993
+      items_75: -1442160484
+      items_76: 1998091311
+      items_77: -1828050477
+      items_78: -692482897
+      items_79: 940050512
+      items_8: 193358501
+      items_80: 1068771483
+      items_81: 2066926952
+      items_82: -481918228
+      items_83: -1584872624
+      items_84: -671375632
+      items_85: 115319111
+      items_86: -68546547
+      items_87: -1722250697
+      items_88: -793414289
+      items_89: -499714009
+      items_9: -1573621004
+      items_90: 1605794246
+      items_91: 1275881114
+      items_92: 1542402926
+      items_93: 2048771852
+      items_94: -1708639531
+      items_95: -1346114296
+      items_96: 1862740202
+      items_97: 708231572
+      items_98: 75425112
+      items_99: 1859464240
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

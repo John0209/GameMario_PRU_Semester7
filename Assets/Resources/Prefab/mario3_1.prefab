@@ -198,7 +198,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1976378693
 Transform:
   m_ObjectHideFlags: 0
@@ -447,7 +447,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0022461265, y: -0.0040785074}
+  m_Offset: {x: -0.0057227537, y: -0.00081240386}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -458,7 +458,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.23877415, y: 0.28107935}
+  m_Size: {x: 0.17619438, y: 0.27454716}
   m_EdgeRadius: 0
 --- !u!50 &1239814236997698019
 Rigidbody2D:
@@ -524,8 +524,10 @@ MonoBehaviour:
   m_shoot: {fileID: 1976378692}
   m_transform: {fileID: 1363187907}
   m_star_henshin: 0
+  m_score: 0
   m_xu: {fileID: 0}
   m_star: {fileID: 0}
+  m_saveMemory: {fileID: 11400000, guid: 2c4e8ffc7acf61346839223ab16041cc, type: 2}
 --- !u!114 &149134523
 MonoBehaviour:
   m_ObjectHideFlags: 0

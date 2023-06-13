@@ -23,6 +23,7 @@ public class sau : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D col)
     {
+        Debug.Log("alo");
         if (col.gameObject.CompareTag("limit"))
         {
             sau_Left = !sau_Left;

@@ -20,7 +20,8 @@ public class Turtle : MonoBehaviour
         //gắn lại position cho turtle
         transform.position = TurtleMove;
     }
-    private void OnCollisionEnter2D(Collision2D col)
+    
+    private void OnTriggerEnter2D(Collider2D col)
     {
         if (col.gameObject.CompareTag("limit"))
         {

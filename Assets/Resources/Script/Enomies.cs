@@ -42,7 +42,7 @@ public class Enomies : MonoBehaviour
         }
         else if(col.collider.tag == "Player")
         {
-            if (m_mario.m_star_henshin <= 1)
+            if (m_mario.m_star_henshin < 1)
             {
                 m_mario.die = true;
                 Mario.GetComponent<MarioMove>().ActiveMarioDie();

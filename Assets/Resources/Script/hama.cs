@@ -66,7 +66,7 @@ public class hama : MonoBehaviour
     public void ActiveEnomyDie(bool is_turn)
     {
         locationDie = m_enomies.transform.localPosition;//vị trí chết
-
+        Debug.Log(locationDie.x + " " + locationDie.y);
         StartCoroutine(EnomiesDie(is_turn));
     }
     IEnumerator EnomiesDie(bool is_turn)
@@ -92,7 +92,7 @@ public class hama : MonoBehaviour
                 m_itemStar.SetActive(true);
                 break;
             }
-            m_itemStar.transform.localPosition = new Vector2(locationDie.x + 1, locationDie.y + 0.5f);
+            m_itemStar.transform.localPosition = new Vector2(locationDie.x + 0.5f, locationDie.y + 0.5f);
             yield return null;
         }
     }
