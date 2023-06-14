@@ -5,7 +5,7 @@ using UnityEngine;
 public class Camera3 : MonoBehaviour
 {
     private Transform Player;
-    private float minX = 0, maxX = 120f;
+    private float minX = 0, maxX = 141.69f;
     float minY = 0f, maxY = 10.11f;
     // Start is called before the first frame update
     void Start()

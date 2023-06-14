@@ -33,10 +33,12 @@ public class MarioMove : MonoBehaviour
     Henshin m_henshin;
     Vector2 locationDie;// vị trí lúc chết
     bool isMark = true; // check để tắt fly
+    bool isCommu = true;// hội thoại only
     //---------------------------------------
     public int m_star_henshin;// điểm ăn sao biến hình
     public int m_score;// điểm ăn xu
     UIManager m_manager;
+    Communication m_communicate;
     public GameObject m_xu;
     public GameObject m_star;
     [SerializeField]
@@ -49,6 +51,7 @@ public class MarioMove : MonoBehaviour
         m_henshin=FindObjectOfType<Henshin>();
         m_box= GetComponent<BoxCollider2D>();
         m_manager = FindObjectOfType<UIManager>();
+        m_communicate= FindObjectOfType<Communication>();
     }
 
     // Update is called once per frame
@@ -303,7 +306,7 @@ public class MarioMove : MonoBehaviour
             m_star_henshin++;
             m_manager.SetTextStar("x 0" + m_star_henshin);
         }
-        if (col.gameObject.CompareTag("reduce"))
+        if (col.gameObject.CompareTag("reduce")) // dụng lửa or xương, băng
         {
             if (m_star_henshin <= 1)
             {
@@ -317,6 +320,17 @@ public class MarioMove : MonoBehaviour
                 m_manager.SetTextStar("x 0" + m_star_henshin);
                 MinusStar();
             }
+        }
+        if (col.gameObject.CompareTag("princess")&&isCommu)// đụng princess hội thoại
+        {
+            m_communicate.ActiveCommunicate();
+            isCommu = false;
+        }
+        if (col.gameObject.CompareTag("daulau") && isCommu)// active communication
+        {
+            Debug.Log(isCommu);
+            ground = true;
+            m_communicate.ActivePanelPrincess();
         }
 
     }
