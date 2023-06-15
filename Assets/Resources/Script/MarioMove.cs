@@ -52,6 +52,7 @@ public class MarioMove : MonoBehaviour
         m_box= GetComponent<BoxCollider2D>();
         m_manager = FindObjectOfType<UIManager>();
         m_communicate= FindObjectOfType<Communication>();
+
     }
 
     // Update is called once per frame
@@ -139,7 +140,7 @@ public class MarioMove : MonoBehaviour
             if (is_Check)
             transform.localPosition = new Vector2(transform.localPosition.x, transform.localPosition.y + jump_Die * Time.deltaTime);
 
-      if(transform.localPosition.y >= locationDie.y + 3)
+        if(transform.localPosition.y >= locationDie.y + 3)
                 is_Check = false;
             yield return null;
             if (is_Check == false)
@@ -153,6 +154,7 @@ public class MarioMove : MonoBehaviour
             }
             yield return null;
         }
+        m_manager.GameOver();
     }
     #endregion
 
