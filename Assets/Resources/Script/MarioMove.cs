@@ -43,6 +43,7 @@ public class MarioMove : MonoBehaviour
     public GameObject m_star;
     [SerializeField]
     public SaveMemory m_saveMemory;
+    UISound m_sound;
     // Start is called before the first frame update
     void Start()
     {
@@ -52,6 +53,7 @@ public class MarioMove : MonoBehaviour
         m_box= GetComponent<BoxCollider2D>();
         m_manager = FindObjectOfType<UIManager>();
         m_communicate= FindObjectOfType<Communication>();
+        m_sound= FindObjectOfType<UISound>();
 
     }
 
@@ -79,14 +81,17 @@ public class MarioMove : MonoBehaviour
 
             switch (level){
                 case 1:
+                    m_sound.EffectHenshin();
                     StartCoroutine(m_henshin.Mario());
                     henshin = false;
                     break;
                 case 2:
+                    m_sound.EffectHenshin();
                     StartCoroutine(m_henshin.MarioGreen());
                     henshin = false;
                     break;
                 case 3:
+                    m_sound.EffectHenshin();
                     StartCoroutine(m_henshin.MarioPink());
                     henshin = false;
                     break;
@@ -108,13 +113,14 @@ public class MarioMove : MonoBehaviour
     // Nếu đụng trúng enomy, sẽ trừ sao hạ cấp
     public void MinusStar()
     {
-        if (m_star_henshin < 3)
+
+        if (m_star_henshin >= 1 && m_star_henshin < 3)
         {
             henshin = true;
             level = 1;
             m_manager.DisActiveButtonLv2();
         }
-        if (m_star_henshin < 5)
+        if (m_star_henshin >= 3 && m_star_henshin < 5)
         {
             henshin = true;
             level = 2;
@@ -149,6 +155,8 @@ public class MarioMove : MonoBehaviour
             }
             if (transform.localPosition.y<=-11f)
             {
+                m_sound.EffectDie();
+
                 Destroy(gameObject);
                 break;
             }
@@ -176,6 +184,7 @@ public class MarioMove : MonoBehaviour
     IEnumerator DisFly()
     {
         isMark = false;
+        m_sound.EffectFly();
         yield return new WaitForSeconds(3);
         m_rgb.bodyType = RigidbodyType2D.Dynamic;
         fly = false;
@@ -184,9 +193,17 @@ public class MarioMove : MonoBehaviour
     IEnumerator DisCirle()
     {
         isMark = false;
+        m_sound.EffectCircle();
         yield return new WaitForSeconds(3);
         circle = false;
         isMark = true;
+    }
+    IEnumerator EffectWalk()
+    {
+        isSound = false;
+        yield return new WaitForSeconds(0.3f);
+        m_sound.EffectRun();
+        isSound = true;
     }
     #endregion
 
@@ -214,6 +231,7 @@ public class MarioMove : MonoBehaviour
             Flight();
           if(isMark) StartCoroutine(DisFly());
         }
+        //Pink shoot
         if (Input.GetKeyDown(KeyCode.R) && level == 3 && speed==0)
         {
             shoot = true;
@@ -231,6 +249,7 @@ public class MarioMove : MonoBehaviour
     // hồng bắn đạn
     public void PinkShoot()
     {
+        m_sound.EffectShoot();
         m_shoot.SetActive(true);
         Instantiate(m_shoot,m_transform.position,Quaternion.identity);
     }
@@ -241,11 +260,14 @@ public class MarioMove : MonoBehaviour
         float fly = Input.GetAxis("Vertical");
         m_rgb.velocity = new Vector2(speed_move * right_left,fly* speed_move);
     }
+    bool isSound = true;
     private void Moving()
     {
+
         float right_left = Input.GetAxis("Horizontal");
         m_rgb.velocity=new Vector2(speed_move*right_left,m_rgb.velocity.y);
         speed =Mathf.Abs(speed_move * right_left);
+        if((speed > 0 || speed <0)&& isSound && isMark) StartCoroutine(EffectWalk());
         if (right_left > 0 && !m_turn) Scale();
         if (right_left < 0 && m_turn) Scale();
     }
@@ -253,6 +275,7 @@ public class MarioMove : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && ground)
         {
+            m_sound.EffectJump();
             m_rgb.AddForce((Vector2.up) * jumped_move);
             ground = false;
         }
@@ -298,12 +321,14 @@ public class MarioMove : MonoBehaviour
         }
         if (col.gameObject.CompareTag("xu"))//ăn xu
         {
+            m_sound.EffectXu();
             m_xu.SetActive(false);
             m_score++;
             m_manager.SetTextScore("x 0" + m_score);
         }
         if (col.gameObject.CompareTag("star")) // ăn sao
         {
+            m_sound.EffectStar();
             m_star.SetActive(false);
             m_star_henshin++;
             m_manager.SetTextStar("x 0" + m_star_henshin);

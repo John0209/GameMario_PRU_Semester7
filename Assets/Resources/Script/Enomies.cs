@@ -12,12 +12,14 @@ public class Enomies : MonoBehaviour
     Rigidbody2D m_rgb;
     UIManager m_uiManager;
     Vector2 locationDie;// vị trí lúc chết
+    UISound m_sound;
     private void Start()
     {
         m_mario=FindObjectOfType<MarioMove>();
         Mario = GameObject.FindGameObjectWithTag("Player");
         m_rgb=GetComponent<Rigidbody2D>();
         m_uiManager=FindObjectOfType<UIManager>();
+        m_sound= FindObjectOfType<UISound>();
     }
     private void OnTriggerEnter2D(Collider2D cols)
     {
@@ -34,7 +36,7 @@ public class Enomies : MonoBehaviour
        
         if ((col.collider.tag == "Player" && (m_mario.circle==true))|| col.collider.tag == "shoot")
         {
-            //Debug.Log(col.contacts[0].normal.x);// right -, left +
+            m_sound.EffectVacham();
             if(col.contacts[0].normal.x<0)
                 ActiveEnomyDie(false);
             else
@@ -42,6 +44,7 @@ public class Enomies : MonoBehaviour
         }
         else if(col.collider.tag == "Player")
         {
+            m_sound.EffectVacham();
             if (m_mario.m_star_henshin < 1)
             {
                 m_mario.die = true;
