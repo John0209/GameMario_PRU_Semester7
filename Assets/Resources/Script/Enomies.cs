@@ -44,7 +44,7 @@ public class Enomies : MonoBehaviour
         }
         else if(col.collider.tag == "Player")
         {
-            m_sound.EffectVacham();
+            m_sound.EffectReduce();
             if (m_mario.m_star_henshin < 1)
             {
                 m_mario.die = true;

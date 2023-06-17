@@ -12,6 +12,8 @@ public class UIMenu : MonoBehaviour
     public GameObject m_menu;
     public VideoPlayer m_clip;
     UISound m_sound;
+    [SerializeField]
+    public SaveMemory m_memory;
     private void Start()
     {
         m_sound= FindObjectOfType<UISound>();
@@ -22,6 +24,8 @@ public class UIMenu : MonoBehaviour
     {
         m_sound.EffectClick();
         m_sound.OffMenu();
+        m_memory.txt_Score = 0;
+        m_memory.txt_Star = 0;
         SceneManager.LoadScene("Map1");
     }
     public void ActiveVideo()

@@ -9,11 +9,12 @@ public class Items : MonoBehaviour
     float donay = 1f;// cộng thêm độ nhảy y 
     public GameObject m_hiddenItem;
     public GameObject m_unlock;
-   
+   UISound m_sound;
     // Start is called before the first frame update
     void Start()
     {
        // itemsHidden=FindObjectOfType<GameObject>();
+       m_sound=FindObjectOfType<UISound>();
     }
 
     // Update is called once per frame
@@ -27,6 +28,7 @@ public class Items : MonoBehaviour
         //mario nhảy lên lấy items
         if (col.collider.tag == "Player" && col.contacts[0].normal.y > 0)
         {
+            m_sound.EffectBrick();
             locationOriginal = transform.localPosition;
             StartCoroutine(Bounce());
         }

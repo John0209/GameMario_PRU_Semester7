@@ -335,7 +335,8 @@ public class MarioMove : MonoBehaviour
         }
         if (col.gameObject.CompareTag("reduce")) // dụng lửa or xương, băng
         {
-            if (m_star_henshin <= 1)
+            m_sound.EffectReduce();
+            if (m_star_henshin < 1)
             {
                 die = true;
                 ActiveMarioDie();
@@ -355,7 +356,6 @@ public class MarioMove : MonoBehaviour
         }
         if (col.gameObject.CompareTag("daulau") && isCommu)// active communication
         {
-            Debug.Log(isCommu);
             ground = true;
             m_communicate.ActivePanelPrincess();
         }
@@ -365,7 +365,8 @@ public class MarioMove : MonoBehaviour
     {
         if (col.gameObject.CompareTag("reduce"))
         {
-            if (m_star_henshin <= 1)
+            m_sound.EffectReduce();
+            if (m_star_henshin < 1)
             {
                 die = true;
                 ActiveMarioDie();

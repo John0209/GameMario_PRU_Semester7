@@ -848,6 +848,8 @@ MonoBehaviour:
   m_vacham: {fileID: 8300000, guid: de90ac85255042748a0ed5222c73cf0f, type: 3}
   m_click: {fileID: 8300000, guid: 9e3fe8c8ec3ee1145829a6ef706fe820, type: 3}
   m_circle: {fileID: 8300000, guid: a1b60fbe7156b034284195ef8f17298b, type: 3}
+  m_brick: {fileID: 8300000, guid: 0c93bf8b0a54a0346ab442cccb88ea58, type: 3}
+  m_reduce: {fileID: 8300000, guid: 7cb360aed50bf33438163f47f04bbd6e, type: 3}
 --- !u!4 &521422566
 Transform:
   m_ObjectHideFlags: 0
@@ -1507,7 +1509,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 678, y: -359.99997}
+  m_AnchoredPosition: {x: 665, y: -359.99997}
   m_SizeDelta: {x: 564.41, y: 124.29}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &721147362
@@ -1543,7 +1545,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u1EA4n R \u0111\u1EC3 s\u1EED d\u1EE5ng k\u1EF9 n\u0103ng"
+  m_Text: "\u1EA4n R \u0111\u1EC3 s\u1EED d\u1EE5ng k\u1EF9 n\u0103ng GI\u1EBET QU\xC1I"
 --- !u!222 &721147363
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3516,6 +3518,7 @@ MonoBehaviour:
   m_intro2: {fileID: 524338003}
   m_menu: {fileID: 2046183967}
   m_clip: {fileID: 410586472}
+  m_memory: {fileID: 11400000, guid: 2c4e8ffc7acf61346839223ab16041cc, type: 2}
 --- !u!4 &1753171998
 Transform:
   m_ObjectHideFlags: 0

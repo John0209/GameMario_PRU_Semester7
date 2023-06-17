@@ -17,6 +17,8 @@ public class UISound : MonoBehaviour
     public AudioClip m_vacham;
     public AudioClip m_click;
     public AudioClip m_circle;
+    public AudioClip m_brick;
+    public AudioClip m_reduce;
     
     public void PlayMenu()
     {
@@ -70,5 +72,13 @@ public class UISound : MonoBehaviour
     public void EffectCircle()
     {
         m_effectSource.PlayOneShot(m_circle);
+    }
+    public void EffectBrick()
+    {
+        m_effectSource.PlayOneShot(m_brick);
+    }
+    public void EffectReduce()
+    {
+        m_effectSource.PlayOneShot(m_reduce);
     }
 }

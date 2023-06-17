@@ -20,6 +20,10 @@ public class UIManager : MonoBehaviour
         m_move=FindObjectOfType<MarioMove>();
         //m_load=FindObjectOfType<SaveMemory>();
     }
+    public void Exit()
+    {
+        SceneManager.LoadScene("Introduction");
+    }
     public void GameOver()
     {
         m_over.SetActive(true);

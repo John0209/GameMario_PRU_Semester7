@@ -6,11 +6,13 @@ public class xutien : MonoBehaviour
 {
     UIManager m_manager;
     MarioMove marioMove;
+    UISound m_sound;
     // Start is called before the first frame update
     void Start()
     {
         m_manager = FindObjectOfType<UIManager>();
         marioMove= FindObjectOfType<MarioMove>();
+        m_sound = FindObjectOfType<UISound>();
     }
 
     // Update is called once per frame
@@ -18,7 +20,7 @@ public class xutien : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Player"))//ăn xu
         {
-           
+            m_sound.EffectXu();
             Destroy(gameObject);
             marioMove.m_score+=2;
             m_manager.SetTextScore("x 0" + marioMove.m_score);

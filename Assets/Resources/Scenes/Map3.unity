@@ -3133,6 +3133,8 @@ MonoBehaviour:
   m_vacham: {fileID: 8300000, guid: de90ac85255042748a0ed5222c73cf0f, type: 3}
   m_click: {fileID: 8300000, guid: 9e3fe8c8ec3ee1145829a6ef706fe820, type: 3}
   m_circle: {fileID: 8300000, guid: a1b60fbe7156b034284195ef8f17298b, type: 3}
+  m_brick: {fileID: 8300000, guid: 0c93bf8b0a54a0346ab442cccb88ea58, type: 3}
+  m_reduce: {fileID: 8300000, guid: 7cb360aed50bf33438163f47f04bbd6e, type: 3}
 --- !u!4 &369449302
 Transform:
   m_ObjectHideFlags: 0
@@ -14801,7 +14803,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2003389123}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1649858748}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: Exit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2003389123
 MonoBehaviour:
   m_ObjectHideFlags: 0
