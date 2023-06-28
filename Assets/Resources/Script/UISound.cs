@@ -6,6 +6,9 @@ public class UISound : MonoBehaviour
 {
     public AudioSource m_effectSource;
     public AudioSource m_Menu;
+    public AudioSource m_Map1_Music;
+    public AudioSource m_Map2_Music;
+    public AudioSource m_Map3_Music;
     public AudioClip m_xu;
     public AudioClip m_star;
     public AudioClip m_jump;
@@ -20,6 +23,30 @@ public class UISound : MonoBehaviour
     public AudioClip m_brick;
     public AudioClip m_reduce;
     
+    public void PlayMap1()
+    {
+        m_Map1_Music.Play();
+    }
+    public void PlayMap2()
+    {
+        m_Map2_Music.Play();
+    }
+    public void PlayMap3()
+    {
+        m_Map3_Music.Play();
+    }
+    public void StopMap1()
+    {
+        m_Map1_Music.Stop();
+    }
+    public void StopMap2()
+    {
+        m_Map2_Music.Stop();
+    }
+    public void StopMap3()
+    {
+        m_Map3_Music.Stop();
+    }
     public void PlayMenu()
     {
         m_Menu.Play();

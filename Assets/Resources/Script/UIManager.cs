@@ -15,24 +15,49 @@ public class UIManager : MonoBehaviour
     public string txt_Map;
     [SerializeField]
     public SaveMemory m_load;
+    UISound m_sound;
     private void Start()
     {
         m_move=FindObjectOfType<MarioMove>();
         //m_load=FindObjectOfType<SaveMemory>();
+        m_sound= FindObjectOfType<UISound>();
+        PlayMusicMap();
     }
     public void Exit()
     {
+        m_load.isNext = true;
         SceneManager.LoadScene("Introduction");
     }
     public void GameOver()
     {
+        m_sound.StopMap1();
+        m_sound.StopMap2();
+        m_sound.StopMap3();
         m_over.SetActive(true);
+    }
+    void PlayMusicMap()
+    {
+        switch (txt_Map)
+        {
+            case "Map1":
+                m_sound.PlayMap1();
+                break;
+            case "Map2":
+                m_sound.PlayMap2();
+                break;
+            case "Map3":
+                m_sound.PlayMap3();
+                break;
+
+        }
     }
     public void Replay()
     {
         m_load.isNext=true;
         SceneManager.LoadScene(txt_Map);
+       // PlayMusicMap();
     }
+  
     public void SetTextScore(string text)
     {
         m_score.text = text;
